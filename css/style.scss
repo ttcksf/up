@@ -1,3 +1,147 @@
-p{
-    margin: 10px;
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:wght@400;700&family=Pinyon+Script&display=swap');
+/*==================================
+# common
+==================================*/
+
+//color
+$color-main: #CA3E47;
+$color-accent: #B99D4A;
+$color-text: #333;
+$color-black: #000;
+$color-white: #fff;
+$color-gray: #E5E5E5;
+
+//font
+$font-english: 'Pinyon Script', cursive, sans-serif;
+$font-accent: 'Archivo Black', sans-serif;
+$font-base: 'Open Sans', sans-serif;
+
+//layout-width-inner
+$layout-width-inner: 1200px;
+
+//breakpoint
+$breakpoints: (
+    "sp": "(max-width: 767px)",
+    "tab": "(min-width: 768px) and (max-width: #{$layout-width-inner})",
+    "pc": "(min-width: #{$layout-width-inner})",
+);
+
+//media
+@mixin mq($breakpoint: sp){
+    @media #{map-get($breakpoints, $breakpoint)}{
+        @content;
+    }
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: $font-base;
+    font-size: 16px;
+    line-height: 1.6;
+    background: $color-white;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    border: none;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover{
+    opacity: 0.6;
+}
+ul{
+    list-style: none;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  width: 100%;
+  font-size: inherit;
+  color: $font-base;
+  border: 1px solid $color-text;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus {
+  outline: 0;
+}
+
+input[type="submit"] {
+  width: 100%;
+  font-size: inherit;
+  color: $color-white;
+  border: 1px solid $color-text;
+  background-color: $color-text;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.6;
+}
+
+select {
+  width: 100%;
+  font-size: inherit;
+  color: $color-text;
+  border: 1px solid $color-text;
+}
+
+select option {
+  color: $color-text;
+}
+
+select option:first-child {
+  display: none;
+}
+
+textarea {
+  width: 100%;
+  font-size: inherit;
+  color: $color-text;
+  border: 1px solid $color-text;
+  resize: none;
+}
+::placeholder {
+  opacity: 1;
+  color: $color-text;
+}
+.SPACER--60{
+    height: 60px;
+
+}
+.SPACER--80{
+    height: 80px;
+
+}
+.SPACER--100{
+    height: 100px;
+    
+}
+.SPACER--130{
+    height: 130px;
+
+}
+.SPACER--160{
+    height: 160px;
+
+}
+.SPACER--200{
+    height: 200px;
+
+}
+.SP--NONE{
+    display: block;
+    @include mq(sp) {
+        display: none;
+    }
 }

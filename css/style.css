@@ -1,4 +1,146 @@
-p {
-  margin: 10px;
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:wght@400;700&family=Pinyon+Script&display=swap");
+/*==================================
+# common
+==================================*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+ul {
+  list-style: none;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  width: 100%;
+  font-size: inherit;
+  color: "Open Sans", sans-serif;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus {
+  outline: 0;
+}
+
+input[type="submit"] {
+  width: 100%;
+  font-size: inherit;
+  color: #fff;
+  border: 1px solid #333;
+  background-color: #333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.6;
+}
+
+select {
+  width: 100%;
+  font-size: inherit;
+  color: #333;
+  border: 1px solid #333;
+}
+
+select option {
+  color: #333;
+}
+
+select option:first-child {
+  display: none;
+}
+
+textarea {
+  width: 100%;
+  font-size: inherit;
+  color: #333;
+  border: 1px solid #333;
+  resize: none;
+}
+
+::-webkit-input-placeholder {
+  opacity: 1;
+  color: #333;
+}
+
+:-ms-input-placeholder {
+  opacity: 1;
+  color: #333;
+}
+
+::-ms-input-placeholder {
+  opacity: 1;
+  color: #333;
+}
+
+::placeholder {
+  opacity: 1;
+  color: #333;
+}
+
+.SPACER--60 {
+  height: 60px;
+}
+
+.SPACER--80 {
+  height: 80px;
+}
+
+.SPACER--100 {
+  height: 100px;
+}
+
+.SPACER--130 {
+  height: 130px;
+}
+
+.SPACER--160 {
+  height: 160px;
+}
+
+.SPACER--200 {
+  height: 200px;
+}
+
+.SP--NONE {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .SP--NONE {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
