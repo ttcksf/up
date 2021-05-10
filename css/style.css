@@ -143,4 +143,14 @@ textarea {
     display: none;
   }
 }
+
+.inner {
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/*==================================
+# header
+==================================*/
 /*# sourceMappingURL=style.css.map */

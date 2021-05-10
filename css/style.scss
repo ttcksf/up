@@ -18,7 +18,7 @@ $font-accent: 'Archivo Black', sans-serif;
 $font-base: 'Open Sans', sans-serif;
 
 //layout-width-inner
-$layout-width-inner: 1200px;
+$layout-width-inner: 1440px;
 
 //breakpoint
 $breakpoints: (
@@ -143,5 +143,29 @@ textarea {
     display: block;
     @include mq(sp) {
         display: none;
+    }
+}
+.inner{
+    width: $layout-width-inner;
+    max-width: 100%;
+    margin: 0 auto;
+}
+/*==================================
+# header
+==================================*/
+.header{
+
+}
+.header__inner{
+
+}
+.header__logo{
+
+}
+.header__nav{
+    li{
+        a{
+
+        }
     }
 }
