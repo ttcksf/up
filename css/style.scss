@@ -355,9 +355,12 @@ textarea {
 .main-visual{
     width: 100%;
     height: auto;
-    min-height: 1300px;
+    min-height: 1400px;
     background: $color-black;
     position: relative;
+    top: 0;
+    left: 0;
+
     @include mq(tab) {
         min-height: 900px;
     }
@@ -371,20 +374,21 @@ textarea {
     position: absolute;
     top: 0%;
     left: 15%;
+    margin-top: 5%;
     @include mq(tab) {
-        top: 50%;
+        top: 0%;
         left: 13%;
     }
     @include mq(sp) {
-        top: 35%;
+        top: 0%;
         left: 12%;
     }
     .main-visual__image{
-        width: 988px;
+        width: 100%;
+        max-width: 988px;
         margin: 0 auto;
         @include mq(tab) {
             width: 575px;
-            max-width: 100%;
         }
         @include mq(sp) {
             width: 280px;
@@ -403,7 +407,7 @@ textarea {
             @include mq(sp) {
                 width: 250px;
                 height: 250px;
-                box-shadow: 25px 25px 0px 0 #e5e5e5;
+                box-shadow: 75px 75px 0px 0 #e5e5e5;
             }
         }
     }
@@ -432,5 +436,10 @@ textarea {
         @include mq(sp) {
             font-size: 18px;
         }
+    }
+}
+@media (max-width: 319px) {
+    .main-visual__content .main-visual__image {
+      width: 100%;
     }
 }

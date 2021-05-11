@@ -348,9 +348,11 @@ textarea {
 .main-visual {
   width: 100%;
   height: auto;
-  min-height: 1300px;
+  min-height: 1400px;
   background: #313131;
   position: relative;
+  top: 0;
+  left: 0;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -367,36 +369,36 @@ textarea {
 
 .main-visual__content {
   width: 72%;
-  max-width: 1000px;
   height: auto;
   position: absolute;
   top: 0%;
   left: 15%;
+  margin-top: 5%;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .main-visual__content {
-    top: 50%;
+    top: 0%;
     left: 13%;
   }
 }
 
 @media (max-width: 767px) {
   .main-visual__content {
-    top: 35%;
+    top: 0%;
     left: 12%;
   }
 }
 
 .main-visual__content .main-visual__image {
-  width: 988px;
+  width: 100%;
+  max-width: 988px;
   margin: 0 auto;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .main-visual__content .main-visual__image {
     width: 575px;
-    max-width: 100%;
   }
 }
 
@@ -428,8 +430,8 @@ textarea {
   .main-visual__content .main-visual__image img {
     width: 250px;
     height: 250px;
-    -webkit-box-shadow: 25px 25px 0px 0 #e5e5e5;
-            box-shadow: 25px 25px 0px 0 #e5e5e5;
+    -webkit-box-shadow: 75px 75px 0px 0 #e5e5e5;
+            box-shadow: 75px 75px 0px 0 #e5e5e5;
   }
 }
 
@@ -469,6 +471,12 @@ textarea {
 @media (max-width: 767px) {
   .main-visual__content .main-visual__lead {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 319px) {
+  .main-visual__content .main-visual__image {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
