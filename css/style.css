@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:wght@400;700&family=Pinyon+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
 /*==================================
 # common
 ==================================*/
@@ -10,7 +11,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
   font-size: 16px;
   line-height: 1.6;
   background: #fff;
@@ -48,7 +49,7 @@ input[type="tel"],
 input[type="email"] {
   width: 100%;
   font-size: inherit;
-  color: "Open Sans", sans-serif;
+  color: "Open Sans", "Noto Sans JP", sans-serif;
   border: 1px solid #333;
   border-radius: 5px;
 }
@@ -456,7 +457,7 @@ textarea {
 }
 
 .main-visual__content .main-visual__lead {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
   color: #E5E5E5;
   font-size: 36px;
   margin-top: 30px;
@@ -478,5 +479,88 @@ textarea {
   .main-visual__content .main-visual__image {
     width: 100%;
   }
+}
+
+/*==================================
+# online-service
+==================================*/
+.online-service {
+  background: url(../img/service-bg.png) no-repeat top center/contain;
+}
+
+.card__head {
+  font-size: 48px;
+  font-family: "Archivo Black", sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.card__lead {
+  font-size: 24px;
+  font-family: "Archivo Black", sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.card__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card__item {
+  width: calc(25% - 30px * 3 / 4);
+  padding: 30px 13px;
+  background: #E5E5E5;
+}
+
+.card__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.card__number {
+  color: #fff;
+  background-color: #CA3E47;
+  padding: 0;
+  margin: 0;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  font-family: "Archivo Black", sans-serif;
+  color: #fff;
+  font-size: 48px;
+}
+
+.card__title {
+  margin: 15px 0;
+}
+
+.card__text {
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+  font-weight: 400;
+}
+
+.card__button {
+  text-align: center;
+}
+
+.card__button a {
+  display: inline-block;
+  width: 335px;
+  height: 85px;
+  line-height: 85px;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 10px;
+  background: #CA3E47;
+  color: #fff;
+  -webkit-box-shadow: 0 3px 6px rgba(51, 51, 51, 0.16);
+          box-shadow: 0 3px 6px rgba(51, 51, 51, 0.16);
 }
 /*# sourceMappingURL=style.css.map */
