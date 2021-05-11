@@ -354,55 +354,66 @@ textarea {
 ==================================*/
 .main-visual{
     width: 100%;
-    height: 1210px;
+    height: auto;
+    min-height: 1300px;
     background: $color-black;
-}
-.main-visual__image{
     position: relative;
-    width: 988px;
-    margin: 0 auto;
     @include mq(tab) {
-        width: 575px;
-        max-width: 100%;
+        min-height: 900px;
     }
     @include mq(sp) {
-        width: 280px;
-    }
-    img{
-        display: inline-block;
-        width: 643px;
-        height: 643px;
-        border-radius: 50%;
-        box-shadow: 345px 115px 0px 0 #e5e5e5;
-        @include mq(tab) {
-            width: 400px;
-            height: 400px;
-            box-shadow: 175px 75px 0px 0 #e5e5e5;
-        }
-        @include mq(sp) {
-            width: 250px;
-            height: 250px;
-            box-shadow: 25px 25px 0px 0 #e5e5e5;
-        }
+        min-height: 600px;
     }
 }
 .main-visual__content{
     width: 72%;
+    height: auto;
     position: absolute;
-    top: 115%;
-    left: 20%;
+    top: 0%;
+    left: 15%;
     @include mq(tab) {
-        top: 85%;
+        top: 50%;
         left: 13%;
     }
     @include mq(sp) {
-        top: 57%;
+        top: 35%;
         left: 12%;
     }
+    .main-visual__image{
+        width: 988px;
+        margin: 0 auto;
+        @include mq(tab) {
+            width: 575px;
+            max-width: 100%;
+        }
+        @include mq(sp) {
+            width: 280px;
+        }
+        img{
+            display: inline-block;
+            width: 643px;
+            height: 643px;
+            border-radius: 50%;
+            box-shadow: 345px 115px 0px 0 #e5e5e5;
+            @include mq(tab) {
+                width: 400px;
+                height: 400px;
+                box-shadow: 175px 75px 0px 0 #e5e5e5;
+            }
+            @include mq(sp) {
+                width: 250px;
+                height: 250px;
+                box-shadow: 25px 25px 0px 0 #e5e5e5;
+            }
+        }
+    }
+    
     .main-visual__title{
         font-family: $font-accent;
         color: $color-main;
         font-size: 144px;
+        word-break: break-word;
+        line-height: 1;
         @include mq(tab) {
             font-size: 74px;
         }
@@ -414,6 +425,7 @@ textarea {
         font-family: $font-base;
         color: $color-gray;
         font-size: 36px;
+        margin-top: 30px;
         @include mq(tab) {
             font-size: 32px;
         }
