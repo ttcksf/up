@@ -671,3 +671,49 @@ textarea {
 .shops__button{
     text-align: center;
 }
+
+/*==================================
+# price
+==================================*/
+.price{
+
+}
+.price__inner{
+
+}
+.price__head{
+    font-size: 72px;
+    text-align: center;
+    font-family: $font-accent;
+    color: $color-text;
+}
+.price__table{
+    width: 100%;
+}
+.table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid $color-gray;
+    width: 760px;
+    max-width: 100%;
+    table-layout: fixed;
+    @include mq(tab) {
+        width: 100%;
+    }
+    th,
+    td{
+        height: 90px;
+        text-align: center;
+        font-family: $font-base;
+        font-size: 36px;
+        line-height: 90px;
+    }
+    th{
+        background: $color-gray;
+        font-weight: 700;
+    }
+    td{
+        background: $color-white;
+        border: 1px solid $color-gray;
+    }
+}
