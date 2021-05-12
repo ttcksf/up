@@ -576,10 +576,8 @@ textarea {
 }
 .casts{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     @include mq(sp) {
-        justify-content: center;
         margin-bottom: 90px;
     }
 }
@@ -622,15 +620,18 @@ textarea {
     }
 }
 .casts__pickup{
-    width: 550px;
-    height: 550px;
+    width: calc(50% - 50px * 1 / 2);
+    margin-left: 50px;
     @include mq(tab) {
-        width: 50%;
+        margin-left: 10px;
+        width: calc(50% - 10px * 1 / 2);
         margin-top: 100px;
     }
     @include mq(sp) {
+        margin-left: 0;
         margin-top: 60px;
         height: auto;
+        width: 100%;
     }
     img{
         display: inline-block;
@@ -688,18 +689,22 @@ textarea {
     color: $color-text;
 }
 .price__table{
-    width: 100%;
-}
-.table{
-    margin: 0 auto;
-    border-collapse: collapse;
-    border: 1px solid $color-gray;
     width: 760px;
-    max-width: 100%;
-    table-layout: fixed;
+    margin: 0 auto;
     @include mq(tab) {
         width: 100%;
     }
+    @include mq(sp) {
+        width: 100%;
+    }
+}
+.table{
+    margin: 0;
+    border: 1px solid $color-gray;
+    width: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+    
     th,
     td{
         height: 90px;
@@ -707,6 +712,12 @@ textarea {
         font-family: $font-base;
         font-size: 36px;
         line-height: 90px;
+        @include mq(tab) {
+            font-size: 32px;
+        }
+        @include mq(sp) {
+            font-size: 22px;
+        }
     }
     th{
         background: $color-gray;
