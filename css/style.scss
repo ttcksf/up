@@ -811,3 +811,51 @@ textarea {
         }
     }
 }
+
+/*==================================
+# footer
+==================================*/
+.footer{
+    background: $color-black;
+}
+.footer__inner{
+
+}
+.footer__menu{
+    
+}
+.footer__nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    @include mq(tab) {
+        display: block;
+        text-align: center;
+    }
+    @include mq(sp) {
+        display: block;
+        text-align: center;
+    }
+        li{
+            @include mq(tab) {
+                &:not(:first-child){
+                    margin-top: 20px;
+                }
+            }
+            @include mq(sp) {
+                &:not(:first-child){
+                    margin-top: 20px;
+                }
+            }
+            a{
+                color: $color-white;
+                font-size: 18px;
+            }
+        }
+}
+.copyright{
+    margin-top: 45px;
+    color: $color-white;
+    font-size: 14px;
+    text-align: center;
+}

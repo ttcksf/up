@@ -978,4 +978,60 @@ textarea {
 .access__address p a {
   color: #333;
 }
+
+/*==================================
+# footer
+==================================*/
+.footer {
+  background: #313131;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer__nav {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__nav {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer__nav li:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__nav li:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+
+.footer__nav li a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.copyright {
+  margin-top: 45px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
