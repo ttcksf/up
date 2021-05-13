@@ -1034,4 +1034,80 @@ textarea {
 .access__address p a {
   color: #333;
 }
+
+/*==================================
+# news
+==================================*/
+.news {
+  background: #313131;
+  height: auto;
+}
+
+.news__head {
+  font-family: "Archivo Black", sans-serif;
+  color: #fff;
+  font-size: 72px;
+  text-align: center;
+}
+
+.news__items {
+  padding: 0 270px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .news__items {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .news__items {
+    padding: 0;
+  }
+}
+
+.news__item-link {
+  display: inline-block;
+}
+
+.news__item-link:not(:first-child) {
+  margin-top: 100px;
+}
+
+.news__title {
+  color: #B99D4A;
+  font-size: 32px;
+  margin: 15px 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .news__title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .news__title {
+    font-size: 24px;
+  }
+}
+
+.news__text {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .news__text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .news__text {
+    font-size: 16px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
