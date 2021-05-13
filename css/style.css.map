@@ -9,7 +9,8 @@
         "_archive.scss",
         "_single.scss",
         "_page-shop.scss",
-        "_archive-cast.scss"
+        "_archive-cast.scss",
+        "_single-cast.scss"
     ],
     "names": [],
     "file": "style.css"
