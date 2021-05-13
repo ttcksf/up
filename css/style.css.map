@@ -8,7 +8,8 @@
         "_index.scss",
         "_archive.scss",
         "_single.scss",
-        "_page-shop.scss"
+        "_page-shop.scss",
+        "_archive-cast.scss"
     ],
     "names": [],
     "file": "style.css"
