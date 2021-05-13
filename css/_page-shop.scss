@@ -1,0 +1,37 @@
+.shop-page{
+    background: $color-black;
+    height: auto;
+}
+.shop-page__inner{
+
+}
+.shop-page__head{
+    font-family: $font-accent;
+    color: $color-white;
+    font-size: 72px;
+    text-align: center;
+}
+.shop__photos{
+    margin: 0 90px;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 180px);
+    @include mq(tab) {
+        padding: 0 45px;
+    }
+    @include mq(sp) {
+        padding: 0;
+    }
+}
+.shop-photo{
+    width: calc(100% / 3 - 30px * 2 / 3);
+    &:not(:nth-child(3n + 1)){
+        margin-left: 30px;
+    }
+    &:nth-child(n + 4){
+        margin-top: 30px;
+    }
+    img{
+
+    }
+}

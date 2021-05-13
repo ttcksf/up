@@ -1175,4 +1175,50 @@ textarea {
 .single__button a {
   font-size: 36px;
 }
+
+.shop-page {
+  background: #313131;
+  height: auto;
+}
+
+.shop-page__head {
+  font-family: "Archivo Black", sans-serif;
+  color: #fff;
+  font-size: 72px;
+  text-align: center;
+}
+
+.shop__photos {
+  margin: 0 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: calc(100% - 180px);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .shop__photos {
+    padding: 0 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .shop__photos {
+    padding: 0;
+  }
+}
+
+.shop-photo {
+  width: calc(100% / 3 - 30px * 2 / 3);
+}
+
+.shop-photo:not(:nth-child(3n + 1)) {
+  margin-left: 30px;
+}
+
+.shop-photo:nth-child(n + 4) {
+  margin-top: 30px;
+}
 /*# sourceMappingURL=style.css.map */
