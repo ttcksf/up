@@ -1,0 +1,63 @@
+.cast-single{
+
+}
+.cast-single__inner{
+
+}
+.cast{
+    width: 600px;
+    margin: 0 auto;
+    @include mq(tab) {
+        width: 480px;
+    }
+    @include mq(sp) {
+        width: 280px;
+    }
+}
+.cast__head{
+    font-family: $font-base;
+    font-size: 36px;
+    @include mq(tab) {
+        font-size: 32px;
+    }
+    @include mq(sp) {
+        font-size: 28px;
+    }
+}
+.cast__img{
+    width: inherit;
+    img{
+
+    }
+}
+.cast__table{
+    width: 100%;
+    margin: 0 auto;
+    .cell{
+        margin-top: 10px;
+        width: 100%;
+        border: 1px solid $color-gray;
+        width: 100%;
+        max-width: 100%;
+        table-layout: fixed;
+    }
+    tr{
+        th,
+        td{
+            text-align: center;
+            height: 90px;
+            line-height: 90px;
+            font-family: $font-base;
+            font-size: 24px;
+        }
+        th{
+            background: $color-gray;
+        }
+        td{
+            background: $color-white;
+        }
+    }
+}
+.cast__button{
+    text-align: center;
+}

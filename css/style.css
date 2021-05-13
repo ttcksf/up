@@ -1373,4 +1373,77 @@ textarea {
 .casts-page__button {
   text-align: center;
 }
+
+.cast {
+  width: 600px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cast {
+    width: 480px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cast {
+    width: 280px;
+  }
+}
+
+.cast__head {
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+  font-size: 36px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cast__head {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cast__head {
+    font-size: 28px;
+  }
+}
+
+.cast__img {
+  width: inherit;
+}
+
+.cast__table {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cast__table .cell {
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid #E5E5E5;
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+}
+
+.cast__table tr th,
+.cast__table tr td {
+  text-align: center;
+  height: 90px;
+  line-height: 90px;
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+  font-size: 24px;
+}
+
+.cast__table tr th {
+  background: #E5E5E5;
+}
+
+.cast__table tr td {
+  background: #fff;
+}
+
+.cast__button {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
