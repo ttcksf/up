@@ -6,7 +6,8 @@
         "_common.scss",
         "_includes.scss",
         "_index.scss",
-        "_archive.scss"
+        "_archive.scss",
+        "_single.scss"
     ],
     "names": [],
     "file": "style.css"
