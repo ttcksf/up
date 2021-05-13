@@ -1271,6 +1271,7 @@ textarea {
 
 .shop-photo {
   width: calc(100% / 3 - 30px * 2 / 3);
+  border: 1px solid #B99D4A;
 }
 
 @media (min-width: 1025px) {
