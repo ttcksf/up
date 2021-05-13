@@ -13,6 +13,12 @@
     color: $color-white;
     font-size: 72px;
     text-align: center;
+    @include mq(tab) {
+        font-size: 64px;
+    }
+    @include mq(sp) {
+        font-size: 56px;
+    }
 }
 .news__items{
     padding: 0 270px;

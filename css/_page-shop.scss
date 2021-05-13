@@ -10,6 +10,12 @@
     color: $color-white;
     font-size: 72px;
     text-align: center;
+    @include mq(tab) {
+        font-size: 64px;
+    }
+    @include mq(sp) {
+        font-size: 56px;
+    }
 }
 .shop__photos{
     margin: 0 90px;
@@ -17,19 +23,38 @@
     flex-wrap: wrap;
     width: calc(100% - 180px);
     @include mq(tab) {
-        padding: 0 45px;
+        margin: 0;
+        width: 100%;
     }
     @include mq(sp) {
-        padding: 0;
+        margin: 0;
+        width: 100%;
     }
 }
 .shop-photo{
     width: calc(100% / 3 - 30px * 2 / 3);
-    &:not(:nth-child(3n + 1)){
-        margin-left: 30px;
+    @include mq(pc) {
+        &:not(:nth-child(3n + 1)){
+            margin-left: 30px;
+        }
+        &:nth-child(n + 4){
+            margin-top: 30px;
+        }       
     }
-    &:nth-child(n + 4){
-        margin-top: 30px;
+    @include mq(tab) {
+        width: calc(50% - 30px * 1 / 2);
+        &:not(:nth-child(2n + 1)){
+            margin-left: 30px;
+        }
+        &:nth-child(n + 3){
+            margin-top: 30px;
+        }
+    }
+    @include mq(sp) {
+        width: 100%;
+        &:not(:first-child){
+            margin-top: 30px;
+        }
     }
     img{
 
