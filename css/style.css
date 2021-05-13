@@ -1110,4 +1110,69 @@ textarea {
     font-size: 16px;
   }
 }
+
+.single {
+  width: 600px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .single {
+    width: 480px;
+  }
+}
+
+@media (max-width: 767px) {
+  .single {
+    width: 280px;
+  }
+}
+
+.single__head {
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+  font-size: 36px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .single__head {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .single__head {
+    font-size: 28px;
+  }
+}
+
+.single__img {
+  width: inherit;
+}
+
+.single__text {
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+  font-size: 24px;
+  line-height: 3.0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .single__text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .single__text {
+    font-size: 18px;
+    margin-bottom: 60px;
+  }
+}
+
+.single__button {
+  text-align: center;
+}
+
+.single__button a {
+  font-size: 36px;
+}
 /*# sourceMappingURL=style.css.map */
