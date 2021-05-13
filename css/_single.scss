@@ -10,7 +10,8 @@
         width: 480px;
     }
     @include mq(sp) {
-        width: 280px;
+        width: 100%;
+        max-width: 100%;
     }
 }
 .single__head{
@@ -45,5 +46,11 @@
     text-align: center;
     a{
         font-size: 36px;
+        @include mq(tab) {
+            font-size: 32px;
+        }
+        @include mq(sp) {
+            font-size: 24px;
+        }
     }
 }

@@ -11,7 +11,8 @@
         width: 480px;
     }
     @include mq(sp) {
-        width: 280px;
+        max-width: 100%;
+        width: 100%;
     }
 }
 .cast__head{
@@ -33,6 +34,9 @@
 .cast__table{
     width: 100%;
     margin: 0 auto;
+    @include mq(sp) {
+        margin-bottom: 60px;
+    }
     .cell{
         margin-top: 10px;
         width: 100%;
@@ -49,6 +53,15 @@
             line-height: 90px;
             font-family: $font-base;
             font-size: 24px;
+            @include mq(tab) {
+                height: 70px;
+                line-height: 70px;
+            }
+            @include mq(sp) {
+                height: 50px;
+                line-height: 50px;
+                font-size: 18px;
+            }
         }
         th{
             background: $color-gray;

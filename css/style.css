@@ -1169,7 +1169,8 @@ textarea {
 
 @media (max-width: 767px) {
   .single {
-    width: 280px;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -1219,6 +1220,18 @@ textarea {
 
 .single__button a {
   font-size: 36px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .single__button a {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .single__button a {
+    font-size: 24px;
+  }
 }
 
 .shop-page {
@@ -1387,7 +1400,8 @@ textarea {
 
 @media (max-width: 767px) {
   .cast {
-    width: 280px;
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -1417,6 +1431,12 @@ textarea {
   margin: 0 auto;
 }
 
+@media (max-width: 767px) {
+  .cast__table {
+    margin-bottom: 60px;
+  }
+}
+
 .cast__table .cell {
   margin-top: 10px;
   width: 100%;
@@ -1433,6 +1453,23 @@ textarea {
   line-height: 90px;
   font-family: "Open Sans", "Noto Sans JP", sans-serif;
   font-size: 24px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cast__table tr th,
+  .cast__table tr td {
+    height: 70px;
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cast__table tr th,
+  .cast__table tr td {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+  }
 }
 
 .cast__table tr th {
