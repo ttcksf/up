@@ -10,7 +10,8 @@
         "_single.scss",
         "_page-shop.scss",
         "_archive-cast.scss",
-        "_single-cast.scss"
+        "_single-cast.scss",
+        "_page-contact.scss"
     ],
     "names": [],
     "file": "style.css"
