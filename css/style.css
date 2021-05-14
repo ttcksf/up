@@ -1528,6 +1528,25 @@ textarea {
 
 .booking__form-row {
   margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.booking__form-label {
+  width: 200px;
+}
+
+.booking__form-select {
+  width: 200px;
+}
+
+.booking__form-select-cast {
+  width: 300px;
+}
+
+.booking__form-input {
+  width: calc(100% - 200px);
 }
 
 .booking__form-check {

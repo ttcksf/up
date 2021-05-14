@@ -40,11 +40,25 @@
 }
 .booking__form-row{
     margin-top: 50px;
+    display: flex;
 }
 .booking__form-label{
+    width: 200px;
+    label{
+        
+    }
+}
+.booking__form-select{
+    width: 200px;
+    &-cast{
+        width: 300px;
+    }
+    select{
 
+    }
 }
 .booking__form-input{
+    width: calc(100% - 200px);
     [type="date"]{
 
     }
@@ -52,9 +66,6 @@
 
     }
     [type="email"]{
-
-    }
-    select{
 
     }
 }
