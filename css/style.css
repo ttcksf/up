@@ -1537,6 +1537,13 @@ textarea {
   width: 200px;
 }
 
+.booking__form-label label {
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  background: #E5E5E5;
+}
+
 .booking__form-select {
   width: 200px;
 }
@@ -1545,8 +1552,90 @@ textarea {
   width: 300px;
 }
 
+.booking__form-select-cast select {
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  padding: 10px 16px;
+  border: 1px solid #E5E5E5;
+  font-size: 24px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #E5E5E5 url(../img/arrowmark.png) no-repeat right 12px center/14px 8px;
+}
+
+.booking__form-select select {
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  padding: 10px 16px;
+  border: 1px solid #E5E5E5;
+  font-size: 24px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #E5E5E5 url(../img/arrowmark.png) no-repeat right 12px center/14px 8px;
+}
+
+.booking__form-select input {
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  padding: 10px 16px;
+  border: 1px solid #E5E5E5;
+  font-size: 24px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #E5E5E5;
+}
+
+.booking__form-select input::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: url("../img/datemark.png") no-repeat right 12px center/18px 18px;
+}
+
 .booking__form-input {
   width: calc(100% - 200px);
+}
+
+.booking__form-input [type="text"] {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #E5E5E5;
+  background: #fff;
+  padding: 10px 16px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 24px;
+  width: 100%;
+}
+
+.booking__form-input [type="email"] {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #E5E5E5;
+  background: #fff;
+  padding: 10px 16px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 16px;
+  width: 100%;
 }
 
 .booking__form-check {
@@ -1555,5 +1644,10 @@ textarea {
 
 .booking__form-button {
   margin-top: 50px;
+}
+
+.booking__form-button [type="submit"] {
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
