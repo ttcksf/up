@@ -1512,11 +1512,35 @@ textarea {
   padding: 185px 125px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .booking__form-wrapper {
+    padding: 90px 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking__form-wrapper {
+    padding: 20px 10px;
+  }
+}
+
 .booking__form-title {
   font-size: 36px;
   color: #CA3E47;
   font-family: "Open Sans", "Noto Sans JP", sans-serif;
   font-weight: 700;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .booking__form-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking__form-title {
+    font-size: 24px;
+  }
 }
 
 .booking__form-description {
@@ -1526,15 +1550,55 @@ textarea {
   margin-top: 50px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .booking__form-description {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking__form-description {
+    font-size: 18px;
+    margin-top: 30px;
+  }
+}
+
 .booking__form-row {
   margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+}
+
+@media (min-width: 1025px) {
+  .booking__form-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .booking__form-row {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking__form-row {
+    margin-top: 30px;
+  }
 }
 
 .booking__form-label {
-  width: 200px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 1025px) {
+  .booking__form-label {
+    width: 200px;
+  }
 }
 
 .booking__form-label label {
@@ -1547,12 +1611,36 @@ textarea {
   display: inline-block;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .booking__form-label label {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking__form-label label {
+    font-size: 16px;
+  }
+}
+
 .booking__form-select {
-  width: 200px;
+  width: 100%;
+}
+
+@media (min-width: 1025px) {
+  .booking__form-select {
+    width: 200px;
+  }
 }
 
 .booking__form-select-cast {
-  width: 300px;
+  width: 100%;
+}
+
+@media (min-width: 1025px) {
+  .booking__form-select-cast {
+    width: 300px;
+  }
 }
 
 .booking__form-select-cast select {
@@ -1570,6 +1658,18 @@ textarea {
   background: #E5E5E5 url(../img/arrowmark.png) no-repeat right 12px center/14px 8px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .booking__form-select-cast select {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking__form-select-cast select {
+    font-size: 16px;
+  }
+}
+
 .booking__form-select select {
   font-family: "Open Sans", "Noto Sans JP", sans-serif;
   font-weight: 700;
@@ -1583,6 +1683,18 @@ textarea {
   -webkit-box-shadow: none;
           box-shadow: none;
   background: #E5E5E5 url(../img/arrowmark.png) no-repeat right 12px center/14px 8px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .booking__form-select select {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking__form-select select {
+    font-size: 16px;
+  }
 }
 
 .booking__form-select input {
@@ -1603,11 +1715,35 @@ textarea {
 
 .booking__form-select input::-webkit-calendar-picker-indicator {
   color: transparent;
-  background: url("../img/datemark.png") no-repeat right 12px center/18px 18px;
+  background: url("../img/datemark.png") no-repeat right 5px center/18px 18px;
+}
+
+@media (min-width: 1025px) {
+  .booking__form-select input::-webkit-calendar-picker-indicator {
+    background: url("../img/datemark.png") no-repeat right 12px center/18px 18px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .booking__form-select input {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking__form-select input {
+    font-size: 16px;
+  }
 }
 
 .booking__form-input {
-  width: calc(100% - 200px);
+  width: 100%;
+}
+
+@media (min-width: 1025px) {
+  .booking__form-input {
+    width: calc(100% - 200px);
+  }
 }
 
 .booking__form-input [type="text"] {
@@ -1654,11 +1790,35 @@ textarea {
   display: none;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .booking__form-check {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking__form-check {
+    margin-top: 30px;
+  }
+}
+
 .booking__form-check span {
   display: inline-block;
   padding-left: 35px;
   position: relative;
   font-size: 18px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .booking__form-check span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking__form-check span {
+    font-size: 14px;
+  }
 }
 
 .booking__form-check span::before {
@@ -1672,6 +1832,20 @@ textarea {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .booking__form-check span::before {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking__form-check span::before {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .booking__form-check span::after {
@@ -1696,9 +1870,33 @@ textarea {
   font-size: 18px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .booking__form-check a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking__form-check a {
+    font-size: 14px;
+  }
+}
+
 .booking__form-button {
   margin-top: 50px;
   text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .booking__form-button {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking__form-button {
+    margin-top: 30px;
+  }
 }
 
 .booking__form-button [type="submit"] {
