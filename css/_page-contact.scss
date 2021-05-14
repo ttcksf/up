@@ -1,29 +1,45 @@
 .booking{
-
+    background: $color-black;
 }
 .booking__inner{
 
 }
 .booking__head{
-
+    font-family: $font-accent;
+    color: $color-white;
+    font-size: 72px;
+    text-align: center;
+    @include mq(tab) {
+        font-size: 64px;
+    }
+    @include mq(sp) {
+        font-size: 56px;
+    }
 }
 .booking__form{
 
 }
 .booking__form-wrapper{
-
+    background: $color-white;
+    padding: 185px 125px;
 }
 .booking__form-title{
-
+    font-size: 36px;
+    color: $color-main;
+    font-family: $font-base;
+    font-weight: 700;
 }
 .booking__form-description{
-
+    font-size: 24px;
+    font-family: $font-base;
+    color: $color-black;
+    margin-top: 50px;
 }
 .booking__form-dl{
 
 }
 .booking__form-row{
-
+    margin-top: 50px;
 }
 .booking__form-label{
 
@@ -43,11 +59,13 @@
     }
 }
 .booking__form-check{
+    margin-top: 50px;
     [type="checkbox"]{
 
     }
 }
 .booking__form-button{
+    margin-top: 50px;
     [type="submit"]{
 
     }

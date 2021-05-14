@@ -1483,4 +1483,58 @@ textarea {
 .cast__button {
   text-align: center;
 }
+
+.booking {
+  background: #313131;
+}
+
+.booking__head {
+  font-family: "Archivo Black", sans-serif;
+  color: #fff;
+  font-size: 72px;
+  text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .booking__head {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking__head {
+    font-size: 56px;
+  }
+}
+
+.booking__form-wrapper {
+  background: #fff;
+  padding: 185px 125px;
+}
+
+.booking__form-title {
+  font-size: 36px;
+  color: #CA3E47;
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+  font-weight: 700;
+}
+
+.booking__form-description {
+  font-size: 24px;
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+  color: #313131;
+  margin-top: 50px;
+}
+
+.booking__form-row {
+  margin-top: 50px;
+}
+
+.booking__form-check {
+  margin-top: 50px;
+}
+
+.booking__form-button {
+  margin-top: 50px;
+}
 /*# sourceMappingURL=style.css.map */
