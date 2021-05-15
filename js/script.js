@@ -10,11 +10,11 @@ jQuery(function($){
             statusCode: {
                 0: function(){
                     $form.slideUp();
-                    $('#js-success').slideDown;
+                    $('#js-success').addClass('-active');
                 },
                 200: function(){
                     $form.slideUp();
-                    $('#js-error').slideDown;
+                    $('#js-error').addClass('-active');
                 }
             }
         });
