@@ -2120,4 +2120,14 @@ textarea {
   border: none;
   display: inline-block;
 }
+
+.contact-message {
+  text-align: center;
+  margin-top: 60px;
+  display: none;
+}
+
+.contact-message.-error {
+  color: #CA3E47;
+}
 /*# sourceMappingURL=style.css.map */
