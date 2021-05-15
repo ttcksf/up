@@ -20,4 +20,10 @@ jQuery(function($){
         });
         return false;
     });
+
+});
+
+//wow
+jQuery(function($){
+    new WOW().init();
 });
