@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/animate.css">
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/script.js"></script>
+    <?php wp_head();?>
 </head>
 <body>
     <header class="header">
@@ -208,5 +209,6 @@
             <div class="SPACER--60"></div><!-- /.SPACER--60 -->
         </div><!-- /.footer__inner inner -->
     </footer><!-- /.footer -->
+    <?php wp_footer();?>
 </body>
 </html>
