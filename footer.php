@@ -38,3 +38,4 @@
         <div class="SPACER--60"></div><!-- /.SPACER--60 -->
     </div><!-- /.footer__inner inner -->
 </footer><!-- /.footer -->
+<?php wp_footer();?>
