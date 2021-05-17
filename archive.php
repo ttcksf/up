@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/script.js"></script>
 </head>
+
 <body>
     <header class="header">
         <div class="header__inner inner">
@@ -34,16 +36,22 @@
                 <label for="drawerChechbox" class="drawer__overlay"></label><!-- /.drawer__overlay -->
                 <nav class="drawer__menu">
                     <ul>
-                        <li class="drawer__item"><a href="/" class="drawer__item-inner">トップページ</a><!-- /.drawer__item-inner --></li><!-- /.drawer__item -->
-                        <li class="drawer__item"><a href="/" class="drawer__item-inner">お知らせ</a><!-- /.drawer__item-inner --></li><!-- /.drawer__item -->
-                        <li class="drawer__item"><a href="/" class="drawer__item-inner">キャスト一覧</a><!-- /.drawer__item-inner --></li><!-- /.drawer__item -->
-                        <li class="drawer__item"><a href="/" class="drawer__item-inner">店内写真</a><!-- /.drawer__item-inner --></li><!-- /.drawer__item -->
-                        <li class="drawer__item"><a href="/" class="drawer__item-inner">オンラインガールズバー</a><!-- /.drawer__item-inner --></li><!-- /.drawer__item -->
-                        <li class="drawer__item"><a href="/" class="drawer__item-inner">ログイン</a><!-- /.drawer__item-inner --></li><!-- /.drawer__item -->
+                        <li class="drawer__item"><a href="/" class="drawer__item-inner">トップページ</a><!-- /.drawer__item-inner -->
+                        </li><!-- /.drawer__item -->
+                        <li class="drawer__item"><a href="/" class="drawer__item-inner">お知らせ</a><!-- /.drawer__item-inner -->
+                        </li><!-- /.drawer__item -->
+                        <li class="drawer__item"><a href="/" class="drawer__item-inner">キャスト一覧</a><!-- /.drawer__item-inner -->
+                        </li><!-- /.drawer__item -->
+                        <li class="drawer__item"><a href="/" class="drawer__item-inner">店内写真</a><!-- /.drawer__item-inner -->
+                        </li><!-- /.drawer__item -->
+                        <li class="drawer__item"><a href="/" class="drawer__item-inner">オンラインガールズバー</a><!-- /.drawer__item-inner -->
+                        </li><!-- /.drawer__item -->
+                        <li class="drawer__item"><a href="/" class="drawer__item-inner">ログイン</a><!-- /.drawer__item-inner -->
+                        </li><!-- /.drawer__item -->
                     </ul>
                 </nav><!-- /.drawer__menu -->
             </div><!-- /.drawer -->
-        </div>   
+        </div>
     </header><!-- /.header -->
 
     <section class="news">
@@ -52,59 +60,34 @@
             <h1 class="news__head">News</h1><!-- /.news__head -->
             <div class="SPACER--60"></div><!-- /.SPACER--60 -->
             <div class="news__items">
-                <a href="/single.html" class="news__item-link">
-                    <div class="news__item">
-                        <div class="news__img"><img src="/img/news1.png" alt=""></div><!-- /.news__img -->
-                        <h2 class="news__title">ホームページを開設しました</h2><!-- /.news__title -->
-                        <p class="news__text">
-                            公式ホームページを開設しました。<br>
-                            最新情報を更新していきますので、お気に入り登録のほど宜しくお願いします。
-                        </p><!-- /.news__text -->
-                    </div><!-- /.news__item -->
-                </a><!-- /.news__item-link -->
-                <a href="/single.html" class="news__item-link">
-                    <div class="news__item">
-                        <div class="news__img"><img src="/img/news2.png" alt=""></div><!-- /.news__img -->
-                        <h2 class="news__title">オンラインガールズバーが開始</h2><!-- /.news__title -->
-                        <p class="news__text">
-                            新サービスとして「オンラインガールズバー」がスタートしました。<br>
-                            自宅にいながらキャストとたのしく飲みましょう！
-                        </p><!-- /.news__text -->
-                    </div><!-- /.news__item -->
-                </a><!-- /.news__item-link -->
-                <a href="/single.html" class="news__item-link">
-                    <div class="news__item">
-                        <div class="news__img"><img src="/img/news3.png" alt=""></div><!-- /.news__img -->
-                        <h2 class="news__title">キャスト募集中</h2><!-- /.news__title -->
-                        <p class="news__text">
-                            Girls Bar Andyで一緒に働きませんか？<br>
-                            未経験者でもしっかりサポートしているので興味がある方は宜しくお願いします。
-                        </p><!-- /.news__text -->
-                    </div><!-- /.news__item -->                
-                </a><!-- /.news__item-link -->
-                <a href="/single.html" class="news__item-link">
-                    <div class="news__item">
-                        <div class="news__img"><img src="/img/news4.png" alt=""></div><!-- /.news__img -->
-                        <h2 class="news__title">新型コロナ対策</h2><!-- /.news__title -->
-                        <p class="news__text">
-                            当店では新型コロナ対策として、マスク着用およびアルコール消毒の対応を徹底しております。<br>
-                            ご来店頂くお客様にもご協力をお願いすることがありますがご理解のほどよろしくお願い致します。
-                        </p><!-- /.news__text -->
-                    </div><!-- /.news__item -->                
-                </a><!-- /.news__item-link -->
+                <?php if (have_posts()) : ?>
+                    <?php while (have_posts()) : the_post(); ?>
+                        <a href="/single.html" class="news__item-link">
+                            <div class="news__item">
+                                <div class="news__img"><img src="/img/news1.png" alt=""></div><!-- /.news__img -->
+                                <h2 class="news__title"><?php the_title(); ?></h2><!-- /.news__title -->
+                                <p class="news__text">
+                                    <?php the_excerpt(); ?>
+                                </p><!-- /.news__text -->
+                            </div><!-- /.news__item -->
+                        </a><!-- /.news__item-link -->
+                    <?php endwhile; ?>
+                <?php else : ?>
+                    <p>記事が見つかりませんでした</p>
+                <?php endif; ?>
                 <div class="SPACER--80"></div><!-- /.SPACER--80 -->
                 <!-- pagenation -->
-			    <div class="pagenation">
-				    <span class="page-numbers current">1</span>
-				    <a class="page-numbers" href="#">2</a>
-				    <a class="page-numbers" href="#">3</a>
+                <div class="pagenation">
+                    <span class="page-numbers current">1</span>
+                    <a class="page-numbers" href="#">2</a>
                     <a class="page-numbers" href="#">3</a>
                     <a class="page-numbers" href="#">3</a>
                     <a class="page-numbers" href="#">3</a>
                     <a class="page-numbers" href="#">3</a>
                     <a class="page-numbers" href="#">3</a>
-				    <a class="next page-numbers" href="#"><i class="fas fa-angle-right"></i></a>
-			    </div><!-- /pagenation -->
+                    <a class="page-numbers" href="#">3</a>
+                    <a class="next page-numbers" href="#"><i class="fas fa-angle-right"></i></a>
+                </div><!-- /pagenation -->
             </div><!-- /.news__items -->
             <div class="SPACER--200"></div><!-- /.SPACER--100 -->
         </div><!-- /.news__inner inner -->
@@ -127,7 +110,7 @@
                     <p>営業時間：13：00～1：00</p>
                 </div><!-- /.access__address -->
             </div><!-- /.access__info -->
-            <div class="SPACER--100"></div><!-- /.SPACER--100 -->    
+            <div class="SPACER--100"></div><!-- /.SPACER--100 -->
         </div><!-- /.access__inner inner -->
     </section><!-- /.access -->
     <footer class="footer">
@@ -150,4 +133,5 @@
         </div><!-- /.footer__inner inner -->
     </footer><!-- /.footer -->
 </body>
+
 </html>
