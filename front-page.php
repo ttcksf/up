@@ -1,19 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Girls Bar Andy</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="shortcut icon" href="/img/favicon.ico">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="/js/wow.min.js"></script>
-    <link rel="stylesheet" href="/css/animate.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/script.js"></script>
-    <?php wp_head();?>
+    <?php get_header();?>
 </head>
 <body>
     <header class="header">
@@ -169,46 +157,6 @@
             <div class="SPACER--100"></div><!-- /.SPACER--100 -->    
         </div><!-- /.price__inner inner -->
     </section><!-- /.price -->
-    <section class="access wow fadeIn" data-wow-duration="4s">
-        <div class="access__inner inner">
-            <div class="SPACER--60"></div><!-- /.SPACER--60 -->
-            <h1 class="access__head">Access</h1><!-- /.access__head -->
-            <div class="SPACER--60"></div><!-- /.SPACER--60 -->
-            <div class="access__info">
-                <div class="access__map wow fadeInUp">
-                    <div class="iframe-wrap">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.4328517281906!2d136.90313111559888!3d35.17076266540431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370d455ea0345%3A0x931fd4737c94da9a!2z44CSNDYwLTAwMDMg5oSb55-l55yM5ZCN5Y-k5bGL5biC5Lit5Yy66Yym77yT5LiB55uu77yR77yT4oiS77yR77yZIOOCouODreODs-mMpu-8og!5e0!3m2!1sja!2sjp!4v1620820328713!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div><!-- /.iframe-wrap -->
-                </div><!-- /.access__map -->
-                <div class="access__address wow fadeInUp">
-                    <p>Girls bar Andy</p>
-                    <p>〒460-0003 愛知県名古屋市中区錦3丁目13-19 アロン錦Ｂ ビル4F 東側</p>
-                    <p><a href="tel:0522658850" class="tel">TEL：0522658850</a></p>
-                    <p>営業時間：13：00～1：00</p>
-                </div><!-- /.access__address -->
-            </div><!-- /.access__info -->
-            <div class="SPACER--100"></div><!-- /.SPACER--100 -->    
-        </div><!-- /.access__inner inner -->
-    </section><!-- /.access -->
-    <footer class="footer">
-        <div class="footer__inner inner">
-            <div class="SPACER--60"></div><!-- /.SPACER--60 -->
-            <div class="footer__menu">
-                <ul class="footer__nav">
-                    <li><a href="">トップページ</a></li>
-                    <li><a href="">お知らせ</a></li>
-                    <li><a href="">キャスト一覧</a></li>
-                    <li><a href="">店内写真</a></li>
-                    <li><a href="">オンラインガールズバー</a></li>
-                    <li><a href="">ログイン</a></li>
-                </ul><!-- /.footer__nav -->
-            </div><!-- /.footer__menu -->
-            <p class="copyright">
-                Copyright &copy; 株式会社UP All Right Reserved
-            </p><!-- /.copyright -->
-            <div class="SPACER--60"></div><!-- /.SPACER--60 -->
-        </div><!-- /.footer__inner inner -->
-    </footer><!-- /.footer -->
-    <?php wp_footer();?>
+    <?php get_footer();?>
 </body>
 </html>
