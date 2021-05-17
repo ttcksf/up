@@ -22,16 +22,7 @@
 <footer class="footer">
     <div class="footer__inner inner">
         <div class="SPACER--60"></div><!-- /.SPACER--60 -->
-        <div class="footer__menu">
-            <ul class="footer__nav">
-                <li><a href="">トップページ</a></li>
-                <li><a href="">お知らせ</a></li>
-                <li><a href="">キャスト一覧</a></li>
-                <li><a href="">店内写真</a></li>
-                <li><a href="">オンラインガールズバー</a></li>
-                <li><a href="">ログイン</a></li>
-            </ul><!-- /.footer__nav -->
-        </div><!-- /.footer__menu -->
+        <?php get_template_part('includes/footer-menu');?>
         <p class="copyright">
             Copyright &copy; 株式会社UP All Right Reserved
         </p><!-- /.copyright -->
