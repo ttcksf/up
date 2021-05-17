@@ -6,7 +6,7 @@
         <div class="access__info">
             <div class="access__map">
                 <div class="iframe-wrap">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.4328517281906!2d136.90313111559888!3d35.17076266540431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370d455ea0345%3A0x931fd4737c94da9a!2z44CSNDYwLTAwMDMg5oSb55-l55yM5ZCN5Y-k5bGL5biC5Lit5Yy66Yym77yT5LiB55uu77yR77yT4oiS77yR77yZIOOCouODreODs-mMpu-8og!5e0!3m2!1sja!2sjp!4v1620820328713!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.4328517281906!2d136.90313111559888!3d35.17076266540431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370d455ea0345%3A0x931fd4737c94da9a!2z44CSNDYwLTAwMDMg5oSb55-l55yM5ZCN5Y-k5bGL5biC5Lit5Yy66Yym77yT5LiB55uu77yR77yT4oiS77yR77yZIOOCouODreODs-mMpu-8og!5e0!3m2!1sja!2sjp!4v1620820328713!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div><!-- /.iframe-wrap -->
             </div><!-- /.access__map -->
             <div class="access__address">
