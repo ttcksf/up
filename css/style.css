@@ -236,6 +236,78 @@ textarea {
   }
 }
 
+.entry-404 {
+  padding-bottom: 85px;
+  text-align: center;
+}
+
+.entry-404-head {
+  color: #f0cdd0;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 36px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .entry-404-head {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 767px) {
+  .entry-404-head {
+    font-size: 36px;
+  }
+}
+
+.entry-404-head span::after {
+  content: " ";
+}
+
+.entry-404-lead {
+  color: #333;
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .entry-404-lead {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .entry-404-lead {
+    font-size: 18px;
+  }
+}
+
+.entry-404-lead .m_sp {
+  display: none;
+}
+
+.entry-404-content {
+  color: #333;
+}
+
+.entry-404-btn {
+  margin-top: 58px;
+}
+
+.entry-404-btn .btn {
+  background: #CA3E47;
+  color: #fff;
+}
+
+.entry-404-btn .btn:hover {
+  background: #E5E5E5;
+  opacity: 1;
+}
+
 /*==================================
 # header
 ==================================*/

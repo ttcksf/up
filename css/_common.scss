@@ -208,3 +208,64 @@ textarea {
         }
     }
 }
+
+//404
+.entry-404 {
+	padding-bottom: 85px;
+	text-align: center;
+}
+
+.entry-404-head {
+	color: #f0cdd0;
+	font-family: $font-accent;
+	font-size: 72px;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 36px;
+    @include mq(tab) {
+        font-size: 56px;
+    }
+    @include mq(sp) {
+        font-size: 36px;
+    }
+}
+
+.entry-404-head span::after {
+	content: " ";
+}
+
+.entry-404-lead {
+	color: $color-text;
+	font-family: $font-base;
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 24px;
+    @include mq(tab) {
+        font-size: 20px;
+    }
+    @include mq(sp) {
+        font-size: 18px;
+    }
+}
+
+.entry-404-lead .m_sp {
+	display: none;
+}
+
+.entry-404-content {
+	color: $color-text;
+}
+
+.entry-404-btn {
+	margin-top: 58px;
+}
+
+.entry-404-btn .btn {
+	background: $color-main;
+	color: $color-white;
+}
+
+.entry-404-btn .btn:hover {
+	background: $color-gray;
+	opacity: 1;
+}
