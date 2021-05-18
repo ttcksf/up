@@ -8,7 +8,7 @@
     <div class="main-visual wow fadeIn" data-wow-duration="4s">
             <div class="main-visual__content">
                 <div class="main-visual__image">
-                    <img src="/img/mv.png" alt="girls bar andy">
+                    <img src="<?php echo get_template_directory_uri();?>/img/mv.png" alt="girls bar andy">
                 </div><!-- /.main-visual__image -->
                 <div class="main-visual__title">Create Night</div><!-- /.main-visual__title -->
                 <div class="main-visual__lead">
@@ -76,15 +76,15 @@
                     <div class="casts__button btn wow fadeInUp"><a href="/">一覧をみる</a></div><!-- /.card__button btn -->
                 </div><!-- /.casts__description -->
                 <div class="casts__pickup wow fadeInUp">
-                    <img src="/img/topic.png" alt="">
+                    <img src="<?php echo get_template_directory_uri();?>/img/topic.png" alt="">
                 </div><!-- /.casts__pickup-image -->
             </div><!-- /.casts -->
             <div class="SPACER--100 SP--NONE"></div><!-- /.SPACER--60 -->
             <div class="shops wow fadeInUp">
-                <div class="shop"><img src="/img/shoplist1.png" alt=""></div><!-- /.shop -->
-                <div class="shop"><img src="/img/shoplist2.png" alt=""></div><!-- /.shop -->
-                <div class="shop"><img src="/img/shoplist3.png" alt=""></div><!-- /.shop -->
-                <div class="shop"><img src="/img/shoplist4.png" alt=""></div><!-- /.shop -->
+                <div class="shop"><img src="<?php echo get_template_directory_uri();?>/img/shoplist1.png" alt=""></div><!-- /.shop -->
+                <div class="shop"><img src="<?php echo get_template_directory_uri();?>/img/shoplist2.png" alt=""></div><!-- /.shop -->
+                <div class="shop"><img src="<?php echo get_template_directory_uri();?>/img/shoplist3.png" alt=""></div><!-- /.shop -->
+                <div class="shop"><img src="<?php echo get_template_directory_uri();?>/img/shoplist4.png" alt=""></div><!-- /.shop -->
             </div><!-- /.shop__photo -->
             <div class="SPACER--80"></div><!-- /.SPACER--80 -->
             <div class="shops__button btn wow fadeInUp"><a href="/">店舗写真</a></div><!-- /.card__button btn -->
