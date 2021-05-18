@@ -1,10 +1,13 @@
+<?php
+    $menu_name = 'footer_nav';
+    $locations = get_nav_menu_locations();
+    $menu = wp_get_nav_menu_object($locations[$menu_name]);
+    $menu_items = wp_get_nav_menu_items($menu->term_id);
+?>
 <div class="footer__menu">
     <ul class="footer__nav">
-        <li><a href="">トップページ</a></li>
-        <li><a href="">お知らせ</a></li>
-        <li><a href="">キャスト一覧</a></li>
-        <li><a href="">店内写真</a></li>
-        <li><a href="">オンラインガールズバー</a></li>
-        <li><a href="">ログイン</a></li>
+        <?php foreach($menu_items as $item):?>
+            <li><a href="<?php echo $item->url;?>"><?php echo $item->title;?></a></li>
+        <?php endforeach;?>
     </ul><!-- /.footer__nav -->
 </div><!-- /.footer__menu -->
