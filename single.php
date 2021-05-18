@@ -17,7 +17,9 @@
                         <div class="SPACER--60"></div><!-- /.SPACER--60 -->
                         <div class="single__img">
                             <?php if (has_post_thumbnail()) {
-                                the_post_thumbnail(array(600,600));
+                                $id = get_post_thumbnail_id();
+                                $img = wp_get_attachment_image_src($id);
+                                echo '<img src="' . esc_url($img[0]) . '">';
                             } ?>
                         </div><!-- /.single__img -->
                         <div class="SPACER--60"></div><!-- /.SPACER--60 -->
