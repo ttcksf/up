@@ -9,6 +9,12 @@
                 <li><a href="">オンラインガールズバー</a></li>
                 <li><a href="">ログイン</a></li>
             </ul> -->
+        <?php
+            $menu_name = 'drawer_nav';
+            $locations = get_nav_menu_locations();
+            $menu = wp_get_nav_menu_object($locations[$menu_name]);
+            $menu_items = wp_get_nav_menu_items($menu -> term_id);
+        ?>
         <div class="drawer">
             <input type="checkbox" class="drawer__checkbox" id="drawerCheckbox">
             <label for="drawerCheckbox" class="drawer__icon">
@@ -17,18 +23,13 @@
             <label for="drawerChechbox" class="drawer__overlay"></label><!-- /.drawer__overlay -->
             <nav class="drawer__menu">
                 <ul>
-                    <li class="drawer__item"><a href="/" class="drawer__item-inner">トップページ</a><!-- /.drawer__item-inner -->
+                    <?php foreach($menu_items as $item):?>
+                    <li class="drawer__item">
+                        <a href="<?php echo $item->url;?>" class="drawer__item-inner">
+                            <?php echo $item->title;?>
+                        </a><!-- /.drawer__item-inner -->
                     </li><!-- /.drawer__item -->
-                    <li class="drawer__item"><a href="/" class="drawer__item-inner">お知らせ</a><!-- /.drawer__item-inner -->
-                    </li><!-- /.drawer__item -->
-                    <li class="drawer__item"><a href="/" class="drawer__item-inner">キャスト一覧</a><!-- /.drawer__item-inner -->
-                    </li><!-- /.drawer__item -->
-                    <li class="drawer__item"><a href="/" class="drawer__item-inner">店内写真</a><!-- /.drawer__item-inner -->
-                    </li><!-- /.drawer__item -->
-                    <li class="drawer__item"><a href="/" class="drawer__item-inner">オンラインガールズバー</a><!-- /.drawer__item-inner -->
-                    </li><!-- /.drawer__item -->
-                    <li class="drawer__item"><a href="/" class="drawer__item-inner">ログイン</a><!-- /.drawer__item-inner -->
-                    </li><!-- /.drawer__item -->
+                    <?php endforeach;?>
                 </ul>
             </nav><!-- /.drawer__menu -->
         </div><!-- /.drawer -->
