@@ -25,9 +25,31 @@
     }
 }
 .single__img{
-    width: inherit;
+    width: 600px;
+    height: 600px;
+    @include mq(tab) {
+        width: 480px;
+        height: 480px;
+    }
+    @include mq(sp) {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+        &::before{
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
+    }
     img{
-
+        width: 100%;
+        height: 100%;
+        @include mq(sp) {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
     }
 }
 .single__text{

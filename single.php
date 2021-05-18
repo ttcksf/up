@@ -17,7 +17,7 @@
                         <div class="SPACER--60"></div><!-- /.SPACER--60 -->
                         <div class="single__img">
                             <?php if (has_post_thumbnail()) {
-                                the_post_thumbnail();
+                                the_post_thumbnail(array(600,600));
                             } ?>
                         </div><!-- /.single__img -->
                         <div class="SPACER--60"></div><!-- /.SPACER--60 -->
