@@ -7,7 +7,7 @@
 <div class="footer__menu">
     <ul class="footer__nav">
         <?php foreach($menu_items as $item):?>
-            <li><a href="<?php echo $item->url;?>"><?php echo $item->title;?></a></li>
+            <li><a href="<?php echo esc_attr($item->url);?>"><?php echo esc_html($item->title);?></a></li>
         <?php endforeach;?>
     </ul><!-- /.footer__nav -->
 </div><!-- /.footer__menu -->
