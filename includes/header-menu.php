@@ -1,6 +1,6 @@
 <header class="header">
     <div class="header__inner inner">
-        <h1 class="header__logo"><a href="/">Girls Bar Andy</a></h1>
+        <h1 class="header__logo"><a href="<?php echo esc_url(home_url('/'));?>">Girls Bar Andy</a></h1>
         <!-- <ul class="header__nav">
                 <li><a href="" class="is-active">トップページ</a></li>
                 <li><a href="">お知らせ</a></li>
@@ -25,8 +25,8 @@
                 <ul>
                     <?php foreach($menu_items as $item):?>
                     <li class="drawer__item">
-                        <a href="<?php echo $item->url;?>" class="drawer__item-inner">
-                            <?php echo $item->title;?>
+                        <a href="<?php echo esc_attr($item->url);?>" class="drawer__item-inner">
+                            <?php echo esc_html($item->title);?>
                         </a><!-- /.drawer__item-inner -->
                     </li><!-- /.drawer__item -->
                     <?php endforeach;?>
