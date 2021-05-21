@@ -12,28 +12,28 @@
             <div class="SPACER--60"></div><!-- /.SPACER--60 -->
             <div class="shop__photos">
                 <div class="shop-photo wow fadeInUpBig" data-wow-duration="1.5s">
-                    <img src="<?php echo get_template_directory_uri();?>/img/shop-photo1.png" alt="">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/shop-photo1.png');?>" alt="">
                 </div><!-- /.shop-photo -->
                 <div class="shop-photo wow fadeInUpBig" data-wow-duration="1.5s">
-                    <img src="<?php echo get_template_directory_uri();?>/img/shop-photo2.png" alt="">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/shop-photo2.png');?>" alt="">
                 </div><!-- /.shop-photo -->
                 <div class="shop-photo wow fadeInUpBig" data-wow-duration="1.5s">
-                    <img src="<?php echo get_template_directory_uri();?>/img/shop-photo3.png" alt="">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/shop-photo3.png');?>" alt="">
                 </div><!-- /.shop-photo -->
                 <div class="shop-photo wow fadeInUpBig" data-wow-duration="1.5s">
-                    <img src="<?php echo get_template_directory_uri();?>/img/shop-photo4.png" alt="">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/shop-photo4.png');?>" alt="">
                 </div><!-- /.shop-photo -->
                 <div class="shop-photo wow fadeInUpBig" data-wow-duration="1.5s">
-                    <img src="<?php echo get_template_directory_uri();?>/img/shop-photo5.png" alt="">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/shop-photo5.png');?>" alt="">
                 </div><!-- /.shop-photo -->
                 <div class="shop-photo wow fadeInUpBig" data-wow-duration="1.5s">
-                    <img src="<?php echo get_template_directory_uri();?>/img/shop-photo6.png" alt="">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/shop-photo6.png');?>" alt="">
                 </div><!-- /.shop-photo -->
                 <div class="shop-photo wow fadeInUpBig" data-wow-duration="1.5s">
-                    <img src="<?php echo get_template_directory_uri();?>/img/shop-photo7.png" alt="">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/shop-photo7.png');?>" alt="">
                 </div><!-- /.shop-photo -->
                 <div class="shop-photo wow fadeInUpBig" data-wow-duration="1.5s">
-                    <img src="<?php echo get_template_directory_uri();?>/img/shop-photo8.png" alt="">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/shop-photo8.png');?>" alt="">
                 </div><!-- /.shop-photo -->
             </div><!-- /.shop__photos -->
             <div class="SPACER--200"></div><!-- /.SAPCER--200 -->
