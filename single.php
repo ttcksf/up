@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <?php get_template_part('includes/header-php'); ?>
+    <?php get_template_part('includes/header-menu'); ?>
     <section class="news__single">
         <div class="news__single__inner inner wow fadeIn" data-wow-duration="4s">
             <?php if (have_posts()) : ?>
@@ -27,7 +27,7 @@
                             <?php the_content(); ?>
                         </div><!-- /.single__text -->
                         <div class="SPACER--100 SP--NONE"></div><!-- /.SPACER--200 -->
-                        <div class="single__button btn"><a href="/archive.html">一覧へ</a></div><!-- /.card__button btn -->
+                        <div class="single__button btn"><a href="<?php echo esc_url(home_url('/news'));?>">一覧へ</a></div><!-- /.card__button btn -->
                         <div class="SPACER--200"></div><!-- /.SPACER--200 -->
                     </div><!-- /.single -->
                 <?php endwhile; ?>

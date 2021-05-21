@@ -66,3 +66,15 @@
         font-size: 16px;
     }
 }
+.news__text + p{
+    color: $color-white;
+    font-size: 20px;
+    font-family: $font-base;
+    font-weight: 400;
+    @include mq(tab) {
+        font-size: 18px;
+    }
+    @include mq(sp) {
+        font-size: 16px;
+    }
+}

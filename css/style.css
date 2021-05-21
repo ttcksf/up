@@ -1298,6 +1298,25 @@ textarea {
   }
 }
 
+.news__text + p {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .news__text + p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .news__text + p {
+    font-size: 16px;
+  }
+}
+
 .single {
   width: 600px;
   margin: 0 auto;
