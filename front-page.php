@@ -8,7 +8,7 @@
     <div class="main-visual wow fadeIn" data-wow-duration="4s">
             <div class="main-visual__content">
                 <div class="main-visual__image">
-                    <img src="<?php echo get_template_directory_uri();?>/img/mv.png" alt="girls bar andy">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/mv.png');?>" alt="girls bar andy">
                 </div><!-- /.main-visual__image -->
                 <div class="main-visual__title">Create Night</div><!-- /.main-visual__title -->
                 <div class="main-visual__lead">
@@ -58,7 +58,7 @@
                 </div><!-- /.card__item -->
             </div><!-- /.card__items -->
             <div class="SPACER--60"></div><!-- /.SPACER--60 -->
-            <div class="card__button btn"><a href="/">ご予約はこちら</a></div><!-- /.card__button btn -->
+            <div class="card__button btn"><a href="<?php echo esc_url(home_url('/contact'));?>">ご予約はこちら</a></div><!-- /.card__button btn -->
         </div><!-- /.card__inner inner -->
         <div class="SPACER--80"></div><!-- /.SPACER--80 -->
     </section><!-- /.online-service -->
@@ -73,21 +73,21 @@
                         当店のキャストをご紹介します。<br>
                         こちらのサイトに掲載しきれていないキャストもたくさん在籍しておりますので是非ご来店ください。
                     </p><!-- /.casts__description-lead -->
-                    <div class="casts__button btn wow fadeInUp"><a href="/">一覧をみる</a></div><!-- /.card__button btn -->
+                    <div class="casts__button btn wow fadeInUp"><a href="<?php echo esc_url(home_url('/cast'));?>">一覧をみる</a></div><!-- /.card__button btn -->
                 </div><!-- /.casts__description -->
                 <div class="casts__pickup wow fadeInUp">
-                    <img src="<?php echo get_template_directory_uri();?>/img/topic.png" alt="">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/topic.png');?>" alt="">
                 </div><!-- /.casts__pickup-image -->
             </div><!-- /.casts -->
             <div class="SPACER--100 SP--NONE"></div><!-- /.SPACER--60 -->
             <div class="shops wow fadeInUp">
-                <div class="shop"><img src="<?php echo get_template_directory_uri();?>/img/shoplist1.png" alt=""></div><!-- /.shop -->
-                <div class="shop"><img src="<?php echo get_template_directory_uri();?>/img/shoplist2.png" alt=""></div><!-- /.shop -->
-                <div class="shop"><img src="<?php echo get_template_directory_uri();?>/img/shoplist3.png" alt=""></div><!-- /.shop -->
-                <div class="shop"><img src="<?php echo get_template_directory_uri();?>/img/shoplist4.png" alt=""></div><!-- /.shop -->
+                <div class="shop"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/shoplist1.png');?>" alt=""></div><!-- /.shop -->
+                <div class="shop"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/shoplist2.png');?>" alt=""></div><!-- /.shop -->
+                <div class="shop"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/shoplist3.png');?>" alt=""></div><!-- /.shop -->
+                <div class="shop"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/shoplist4.png');?>" alt=""></div><!-- /.shop -->
             </div><!-- /.shop__photo -->
             <div class="SPACER--80"></div><!-- /.SPACER--80 -->
-            <div class="shops__button btn wow fadeInUp"><a href="/">店舗写真</a></div><!-- /.card__button btn -->
+            <div class="shops__button btn wow fadeInUp"><a href="<?php echo esc_url(home_url('/shop'));?>">店舗写真</a></div><!-- /.card__button btn -->
             <div class="SPACER--60"></div><!-- /.SPACER--60 -->
         </div><!-- /.shop-service__inner -->
     </section><!-- /.casts -->
