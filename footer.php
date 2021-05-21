@@ -24,7 +24,7 @@
         <div class="SPACER--60"></div><!-- /.SPACER--60 -->
         <?php get_template_part('includes/footer-menu');?>
         <p class="copyright">
-            Copyright &copy; 株式会社UP All Right Reserved
+            Copyright &copy; 株式会社UP All Right Reserved 2021
         </p><!-- /.copyright -->
         <div class="SPACER--60"></div><!-- /.SPACER--60 -->
     </div><!-- /.footer__inner inner -->
