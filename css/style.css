@@ -1646,7 +1646,6 @@ textarea {
 .cast__table tr td {
   text-align: center;
   height: 90px;
-  line-height: 90px;
   font-family: "Open Sans", "Noto Sans JP", sans-serif;
   font-size: 24px;
 }
@@ -1655,7 +1654,6 @@ textarea {
   .cast__table tr th,
   .cast__table tr td {
     height: 70px;
-    line-height: 70px;
   }
 }
 
@@ -1663,17 +1661,31 @@ textarea {
   .cast__table tr th,
   .cast__table tr td {
     height: 50px;
-    line-height: 50px;
     font-size: 18px;
   }
 }
 
 .cast__table tr th {
   background: #E5E5E5;
+  line-height: 90px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cast__table tr th {
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cast__table tr th {
+    line-height: 50px;
+  }
 }
 
 .cast__table tr td {
   background: #fff;
+  line-height: 1.7;
+  vertical-align: middle;
 }
 
 .cast__button {

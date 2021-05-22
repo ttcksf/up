@@ -50,24 +50,30 @@
         td{
             text-align: center;
             height: 90px;
-            line-height: 90px;
             font-family: $font-base;
             font-size: 24px;
             @include mq(tab) {
                 height: 70px;
-                line-height: 70px;
             }
             @include mq(sp) {
                 height: 50px;
-                line-height: 50px;
                 font-size: 18px;
             }
         }
         th{
             background: $color-gray;
+            line-height: 90px;
+            @include mq(tab) {
+                line-height: 70px;
+            }
+            @include mq(sp) {
+                line-height: 50px;
+            }
         }
         td{
             background: $color-white;
+            line-height: 1.7;
+            vertical-align: middle;
         }
     }
 }
