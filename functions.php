@@ -9,4 +9,11 @@ add_action('init',function(){
         'drawer_nav' => 'ドロワーメニュー',
         'footer_nav' => 'フッターメニュー',
     ]);
+    //custom
+    register_post_type('cast',[
+        'label' => 'キャスト',
+        'public' => true,
+        'menu_position' => 5,
+        'menu_icon' => 'dashicons-buddicons-buddypress-logo'
+    ]);
 });
