@@ -15,7 +15,7 @@ add_action('init',function(){
         'public' => true,
         'menu_position' => 5,
         'menu_icon' => 'dashicons-buddicons-buddypress-logo',
-        'supports' => ['thumbnail','title','editor'],
+        'supports' => ['thumbnail','title','editor','custom-fields'],
         'has_archive' => true,
         'show_in_rest' => true,
     ]);
