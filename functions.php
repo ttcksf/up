@@ -16,5 +16,6 @@ add_action('init',function(){
         'menu_position' => 5,
         'menu_icon' => 'dashicons-buddicons-buddypress-logo',
         'supports' => ['thumbnail','title','editor'],
+        'has_archive' => true,
     ]);
 });
