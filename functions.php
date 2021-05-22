@@ -20,3 +20,10 @@ add_action('init',function(){
         'show_in_rest' => true,
     ]);
 });
+add_action('pre_get_posts', function($query){
+    if (is_admin() || ! $query->is_main_query())
+        return;
+    if($query->is_archive('cast')){
+        $query->set('posts_per_page', '12');
+    }
+});
