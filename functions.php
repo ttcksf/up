@@ -14,6 +14,7 @@ add_action('init',function(){
         'label' => 'キャスト',
         'public' => true,
         'menu_position' => 5,
-        'menu_icon' => 'dashicons-buddicons-buddypress-logo'
+        'menu_icon' => 'dashicons-buddicons-buddypress-logo',
+        'supports' => ['thumbnail','title','editor'],
     ]);
 });
