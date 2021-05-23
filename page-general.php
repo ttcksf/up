@@ -13,7 +13,7 @@
             <div class="entry-404-lead">こちらのボタンより決済画面に移動お願い致します。</div><!-- /entry-404-head -->
             <p class="entry-404-content">お支払いはクレジットカードのみになります。</p><!-- /entry-404-content -->
             <div class="entry-404-btn">
-                <form action="<?php echo esc_url(get_template_directory_uri() . '/checkout.php');?>" method="POST">
+                <form action="<?php echo esc_url(get_template_directory_uri() . '/checkout-general.php');?>" method="POST">
                     <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_51HrNG6HVf78AUFmE7ZJ1thRXiELr8RpKrAhQ1rSFVNT4MtsxqB4J6tdCtJt1H0WINZEDg0K9qJ4Fkeizr8QKtA0I00WkJf9V9E" data-amount="4000" data-name="Girls Bar Andy" data-description="通常1セット" data-image="https://stripe.com/img/documentation/checkout/marketplace.png" data-locale="auto" data-currency="jpy" data-zip-code="false" data-allow-remember-me="false" data-label="購入"></script>
                 </form>
             </div>
