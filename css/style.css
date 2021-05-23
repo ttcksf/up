@@ -2159,6 +2159,24 @@ textarea {
   display: inline-block;
 }
 
+.success-message {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Open Sans", "Noto Sans JP", sans-serif;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .success-message {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .success-message {
+    font-size: 24px;
+  }
+}
+
 .sale {
   background: #313131;
 }

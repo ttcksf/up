@@ -12,11 +12,7 @@
             <div class="SPACER--60"></div><!-- /.SPACER--60 -->
             <div class="booking__form booking__form-wrapper">
             
-                    <div class="booking__form-title">オンラインガールズバーご予約フォーム</div><!-- /.booking__form-title -->
-                    <div class="booking__form-description">
-                        こちらのフォームに必要事項を入力をお願いします。<br>
-                        日程、キャストについては当日のスケジュール次第で変更になることもありますのでご了承ください。
-                    </div><!-- /.booking__form-description -->
+                    
                     
                 <?php echo do_shortcode('[mwform_formkey key="25"]');?>
             </div><!-- /.booking__form -->

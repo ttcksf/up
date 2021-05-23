@@ -309,3 +309,14 @@
         display: inline-block;
     }
 }
+.success-message{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: $font-base;
+    @include mq(tab) {
+        font-size: 32px;
+    }
+    @include mq(sp) {
+        font-size: 24px;
+    }
+}
