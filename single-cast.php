@@ -14,11 +14,14 @@
                 <h1 class="cast__head"><?php the_title(); ?></h1><!-- /.cast__head -->
                 <div class="SPACER--60"></div><!-- /.SPACER--60 -->
                 <div class="cast__img">
-                    <?php if (has_post_thumbnail()) {
+                    <?php if (has_post_thumbnail()) :
                         $id = get_post_thumbnail_id();
                         $img = wp_get_attachment_image_src($id, 'large');
-                        echo '<img src="' . esc_url($img[0]) . '">';
-                    } ?>
+                    else :
+                        $img = array(get_template_directory_uri() . '/img/noimg.png');
+                    endif;
+                    ?>
+                    <?php echo '<img src="' . esc_url($img[0]) . '">';?>
                 </div><!-- /.cast__img -->
                 <div class="SPACER--60"></div><!-- /.SPACER--60 -->
                 <div class="cast__table">
@@ -79,7 +82,7 @@
                     </table><!-- /.cell -->
                 </div><!-- /.cast__table -->
                 <div class="SPACER--100 SP--NONE"></div><!-- /.SPACER--200 -->
-                <div class="cast__button btn-large"><a href="<?php echo esc_url(home_url('/contact'));?>">オンラインガールズバーの予約へ</a></div><!-- /.cast__button btn-large -->
+                <div class="cast__button btn-large"><a href="<?php echo esc_url(home_url('/contact')); ?>">オンラインガールズバーの予約へ</a></div><!-- /.cast__button btn-large -->
                 <div class="SPACER--200"></div><!-- /.SPACER-200 -->
             </div><!-- /.cast -->
         </div><!-- /.cast-single__inner -->

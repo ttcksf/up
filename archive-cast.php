@@ -16,11 +16,14 @@
                     <?php while (have_posts()) : the_post(); ?>
                         <a href="<?php the_permalink(); ?>" class="casts__photo-link  wow fadeInUpBig" data-wow-duration="1.5s">
                             <div class="casts__photo">
-                                <?php if (has_post_thumbnail()) {
+                                <?php if (has_post_thumbnail()) :
                                     $id = get_post_thumbnail_id();
                                     $img = wp_get_attachment_image_src($id, 'large');
-                                    echo '<img src="' . esc_url($img[0]) . '">';
-                                } ?>
+                                    else :
+                                        $img = array(get_template_directory_uri() . '/img/noimg.png');
+                                    endif;
+                                ?>
+                                <?php echo '<img src="' . esc_url($img[0]) . '">';?>
                             </div><!-- /.casts__photo -->
                         </a><!-- /.casts__photo-link -->
                     <?php endwhile; ?>
