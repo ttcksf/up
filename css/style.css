@@ -11,6 +11,10 @@
 }
 
 body {
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
   font-family: "Open Sans", "Noto Sans JP", sans-serif;
   font-size: 16px;
   line-height: 1.6;
@@ -780,19 +784,21 @@ textarea {
   font-family: "Archivo Black", sans-serif;
   text-align: center;
   color: #fff;
+  white-space: nowrap;
 }
 
 @media (max-width: 767px) {
   .card__head {
-    font-size: 32px;
+    font-size: 30px;
   }
 }
 
 .card__lead {
-  font-size: 24px;
+  font-size: 22px;
   font-family: "Archivo Black", sans-serif;
   text-align: center;
   color: #fff;
+  white-space: nowrap;
 }
 
 @media (max-width: 767px) {

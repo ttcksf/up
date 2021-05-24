@@ -110,15 +110,17 @@
     font-family: $font-accent;
     text-align: center;
     color: $color-white;
+    white-space: nowrap;
     @include mq(sp) {
-        font-size: 32px;
+        font-size: 30px;
     }
 }
 .card__lead{
-    font-size: 24px;
+    font-size: 22px;
     font-family: $font-accent;
     text-align: center;
     color: $color-white;
+    white-space: nowrap;
     @include mq(sp) {
         font-size: 20px;
     }
