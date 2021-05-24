@@ -982,6 +982,14 @@ textarea {
   width: 100%;
 }
 
+@media (min-width: 429px) and (max-width: 767px) {
+  .casts__pickup img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
 .shops {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1019,6 +1027,14 @@ textarea {
   }
   .shop:not(:first-child) {
     margin-top: 30px;
+  }
+}
+
+@media (min-width: 429px) and (max-width: 767px) {
+  .shops img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
   }
 }
 

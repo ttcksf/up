@@ -262,6 +262,13 @@
         width: 100%;
     }
 }
+@media (min-width: 429px) and (max-width: 767px){
+    .casts__pickup img{
+        width: 70%;
+        margin: 0 auto;
+        display: block;
+    }
+}
 .shops{
     display: flex;
     flex-wrap: wrap;
@@ -289,8 +296,12 @@
             margin-top: 30px;
         }
     }
-    img{
-
+}
+@media (min-width: 429px) and (max-width: 767px){
+    .shops img{
+        width: 70%;
+        margin: 0 auto;
+        display: block;
     }
 }
 .shops__button{
