@@ -447,6 +447,14 @@ textarea {
   width: inherit;
   height: inherit;
   position: fixed;
+  top: 30px;
+  bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .drawer__icon {
+    top: 10px;
+  }
 }
 
 .drawer__icon-parts, .drawer__icon-parts::before, .drawer__icon-parts::after {

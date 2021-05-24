@@ -78,6 +78,11 @@
         width: inherit;
         height: inherit;
         position: fixed;
+        top: 30px;
+        bottom: 0;
+        @include mq(sp) {
+            top: 10px;
+        }
         //ハンバーガーアイコンの線
         &-parts,
         &-parts::before,
