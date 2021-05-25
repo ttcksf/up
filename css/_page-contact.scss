@@ -169,7 +169,8 @@
         border: 1px solid $color-gray;
         font-size: 24px;
         box-shadow: none;
-        background: $color-gray;
+        // background: $color-gray;
+        background: $color-gray url(../img/datemark.png) no-repeat right 12px center / 16px 16px;
         width: 100%;
         // &::-webkit-calendar-picker-indicator {
         //     color: transparent;
