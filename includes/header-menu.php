@@ -21,6 +21,7 @@
                 <span class="drawer__icon-parts"></span><!-- /.drawer__icon-parts -->
             </label><!-- /.drawer__icon -->
             <label for="drawerChechbox" class="drawer__overlay"></label><!-- /.drawer__overlay -->
+            <label for="drawerCheckbox" class="drawer__close"></label>
             <nav class="drawer__menu">
                 <ul>
                     <?php foreach($menu_items as $item):?>
