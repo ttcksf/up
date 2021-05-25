@@ -1901,35 +1901,19 @@ textarea {
   }
 }
 
-.booking__form-cell {
+.booking__form-row {
   margin-top: 50px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .booking__form-cell {
+  .booking__form-row {
     margin-top: 40px;
   }
 }
 
 @media (max-width: 767px) {
-  .booking__form-cell {
+  .booking__form-row {
     margin-top: 30px;
-  }
-}
-
-.number {
-  margin-top: 30px;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .number {
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 767px) {
-  .number {
-    margin-top: 10px;
   }
 }
 
