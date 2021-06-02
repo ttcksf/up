@@ -42,7 +42,6 @@
     }
 }
 .news__img{
-    img{
         width: 600px;
         height: 600px;
         @include mq(tab) {
@@ -69,7 +68,6 @@
                 left: 0;
             }
         }
-    }
 }
 .news__title{
     color: $color-accent;
