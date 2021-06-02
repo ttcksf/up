@@ -36,19 +36,21 @@
                 <?php endif; ?>
                 <div class="SPACER--80"></div><!-- /.SPACER--80 -->
                 <!-- pagenation -->
-                <?php if (paginate_links()) : ?>
-                    <div class="pagenation">
-                        <?php
-                        echo paginate_links(array(
-                            'end_size' => 1,
-                            'mid_size' => 1,
-                            'prev_next' => true,
-                            'prev_text' => '<i class="fas fa-angle-left"></i>',
-                            'next_text' => '<i class="fas fa-angle-right"></i>',
-                        ));
-                        ?>
-                    </div><!-- /pagenation -->
-                <?php endif; ?>
+                <div class="pagenation-wrapper">
+                    <?php if (paginate_links()) : ?>
+                        <div class="pagenation">
+                            <?php
+                            echo paginate_links(array(
+                                'end_size' => 1,
+                                'mid_size' => 1,
+                                'prev_next' => true,
+                                'prev_text' => '<i class="fas fa-angle-left"></i>',
+                                'next_text' => '<i class="fas fa-angle-right"></i>',
+                            ));
+                            ?>
+                        </div><!-- /pagenation -->
+                    <?php endif; ?>
+                </div><!-- /.pagenation-wrapper -->
             </div><!-- /.news__items -->
             <div class="SPACER--200"></div><!-- /.SPACER--100 -->
         </div><!-- /.news__inner inner -->
