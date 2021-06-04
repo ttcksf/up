@@ -17,13 +17,11 @@
                     <?php while (have_posts()) : the_post(); ?>
                         <a href="<?php the_permalink(); ?>" class="news__item-link">
                             <div class="news__item">
-                                <div class="news__img">
-                                    <?php if (has_post_thumbnail()) {
-                                        $id = get_post_thumbnail_id();
-                                        $img = wp_get_attachment_image_src($id);
-                                        echo '<img src="' . esc_url($img[0]) . '">';
-                                    } ?>
-                                </div><!-- /.news__img -->
+                                <?php if (has_post_thumbnail()) {
+                                    $id = get_post_thumbnail_id();
+                                    $img = wp_get_attachment_image_src($id);
+                                    echo '<div class="news__img"><img src="' . esc_url($img[0]) . '"></div>';
+                                } ?>
                                 <h2 class="news__title"><?php the_title(); ?></h2><!-- /.news__title -->
                                 <p class="news__text">
                                     <?php the_excerpt(); ?>
