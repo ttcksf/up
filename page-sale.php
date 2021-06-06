@@ -41,6 +41,7 @@
                 </form><!-- /.sale__form-wrapper -->
                 <div id="js-success" class="contact-message">
                     <p>送信完了しました ページを再読み込みして新しい内容を入力してください</p>
+                    <div class="entry-404-btn"><a class="btn" href="<?php echo esc_url(home_url('/sale')); ?>">売上管理に戻る</a></div>
                 </div><!-- /.contact-message -->
                 <div id="js-error" class="contact-message -error">
                     <p>送信に失敗しました　ページを再読み込みして再度やり直してください</p>
