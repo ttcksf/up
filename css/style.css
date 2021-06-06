@@ -2465,6 +2465,23 @@ textarea {
   height: 100%;
 }
 
+.sale__form-input [type="password"] {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid #333;
+  background: #fff;
+  padding: 10px 16px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  width: 100%;
+  padding: 10px 16px;
+  height: 100%;
+}
+
 .sale__form-button {
   margin-top: 50px;
   text-align: center;

@@ -8,6 +8,7 @@
     <section class="sale">
         <div class="sale__inner inner wow fadeIn" data-wow-duration="4s">
             <div class="SPACER--60"></div><!-- /.SPACER--60 -->
+            <?php if( !post_password_required( $post->ID ) ) :  ?>
             <h1 class="sale__head">SalesReport</h1><!-- /.sale__head -->
             <div class="SPACER--60"></div><!-- /.SPACER--60 -->
             <div class="sale__form">
@@ -48,6 +49,10 @@
                 </div><!-- /.contact-message -->
             </div><!-- /.sale__form -->
             <div class="SPACER--100"></div><!-- /.SPACER--100 -->
+            <?php else:  ?>
+<?php echo get_the_password_form(); ?>
+<?php endif;  ?>
+<div class="SPACER--200"></div><!-- /.SPACER--100 -->
         </div><!-- /.sale__inner inner -->
     </section><!-- /.sale -->
 

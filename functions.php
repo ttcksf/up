@@ -28,4 +28,29 @@ add_action('pre_get_posts', function($query){
     }
 });
 
+function my_password_form()
+{
+    return
+        '<form class="post_password" action="' . home_url() . '/wp-login.php?action=postpass" method="post">
+            <div class="sale__form-row">
+                <dt class="sale__form-label"><label for="sale-name">パスワード</label></dt>
+                <dd class="sale__form-input"><input id="sale-name" type="password" name="post_password"></dd>
+            </div>
+            <div class="sale__form-button">
+                <input type="submit" name="Submit" value="' . esc_attr__("パスワード認証") . '" />
+            </div>
+        </form>';
+}
+add_filter('the_password_form', 'my_password_form');
+
+function custom_postpass_time()
+{
+    require_once ABSPATH . 'wp-includes/class-phpass.php';
+    $hasher = new PasswordHash(8, true);
+    setcookie('wp-postpass_' . COOKIEHASH, $hasher->HashPassword(wp_unslash($_POST['post_password'])), time() + MINUTE_IN_SECONDS, COOKIEPATH);
+    wp_safe_redirect(wp_get_referer());
+    exit();
+}
+add_action('login_form_postpass', 'custom_postpass_time');
+
 add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
