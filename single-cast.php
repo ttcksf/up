@@ -14,237 +14,263 @@
                 <h1 class="cast__head"><?php the_title(); ?></h1><!-- /.cast__head -->
                 <div class="SPACER--60"></div><!-- /.SPACER--60 -->
                 <div class="cast__img">
-                    <?php if (has_post_thumbnail()) :
-                        $id = get_post_thumbnail_id();
-                        $img = wp_get_attachment_image_src($id, 'large');
-                    else :
-                        $img = array(get_template_directory_uri() . '/img/noimg.png');
-                    endif;
-                    ?>
-                    <?php echo '<img src="' . esc_url($img[0]) . '">';?>
+                    <?php if (has_post_thumbnail()) : ?>
+                        <?php $id = get_post_thumbnail_id();?>
+                        <?php $img = wp_get_attachment_image_src($id, 'large');?>
+                        <?php echo '<img src="' . esc_url($img[0]) . '">'; ?>
+                    <?php else : ?>
+                       <?php $img = array(get_template_directory_uri() . '/img/noimg.png');?>
+                       <?php echo '<img src="' . esc_url($img[0]) . '">'; ?>
+                    <?php endif;?>    
                 </div><!-- /.cast__img -->
                 <div class="SPACER--60"></div><!-- /.SPACER--60 -->
                 <div class="cast__table">
+                <?php $value = get_post_meta($post->ID, 'name', true);?>
+                <?php if(empty($value)):?>
+                <?php else:?>
                     <table class="cell">
-                        <?php if (get_field('name')) : ?>
-                            <?php $field = get_field_object('name'); ?>
                             <tr>
-                                <th><?php echo $field['label']; ?></th>
+                                <th>名前</th>
                             </tr>
                             <tr>
                                 <td><?php the_field('name'); ?></td>
                             </tr>
-                        <?php endif; ?>
                     </table><!-- /.cell -->
+                <?php endif;?>
+
+                <?php $value = get_post_meta($post->ID, 'older', true);?>
+                <?php if(empty($value)):?>
+                <?php else:?>
                     <table class="cell">
-                        <?php if (get_field('older')) : ?>
-                            <?php $field = get_field_object('older'); ?>
                             <tr>
-                                <th><?php echo $field['label']; ?></th>
+                                <th>年齢</th>
                             </tr>
                             <tr>
-                                <td><?php the_field('older'); ?></td>
+                                <td><?php the_field('older'); ?>才</td>
                             </tr>
-                        <?php endif; ?>
                     </table><!-- /.cell -->
+                <?php endif;?>
+                
+                <?php $value = get_post_meta($post->ID, 'kind', true);?>
+                <?php if(empty($value)):?>
+                <?php else:?>
                     <table class="cell">
-                        <?php if (get_field('style')) : ?>
-                            <?php $field = get_field_object('style'); ?>
                             <tr>
-                                <th><?php echo $field['label']; ?></th>
-                            </tr>
-                            <tr>
-                                <td><?php the_field('style'); ?></td>
-                            </tr>
-                        <?php endif; ?>
-                    </table><!-- /.cell -->
-                    <table class="cell">
-                        <?php if (get_field('kind')) : ?>
-                            <?php $field = get_field_object('kind'); ?>
-                            <tr>
-                                <th><?php echo $field['label']; ?></th>
+                                <th>趣味</th>
                             </tr>
                             <tr>
                                 <td><?php the_field('kind'); ?></td>
                             </tr>
-                        <?php endif; ?>
                     </table><!-- /.cell -->
+                <?php endif;?>
+
+                <?php $value = get_post_meta($post->ID, 'place', true);?>
+                <?php if(empty($value)):?>
+                <?php else:?>
                     <table class="cell">
-                        <?php if (get_field('place')) : ?>
-                            <?php $field = get_field_object('place'); ?>
                             <tr>
-                                <th><?php echo $field['label']; ?></th>
+                                <th>デートしたい場所</th>
                             </tr>
                             <tr>
                                 <td><?php the_field('place'); ?></td>
                             </tr>
-                        <?php endif; ?>
                     </table><!-- /.cell -->
+                <?php endif;?>
+                
+                <?php $value = get_post_meta($post->ID, 'style', true);?>
+                <?php if(empty($value)):?>
+                <?php else:?>
                     <table class="cell">
-                        <?php if (get_field('point')) : ?>
-                            <?php $field = get_field_object('point'); ?>
                             <tr>
-                                <th><?php echo $field['label']; ?></th>
+                                <th>スタイル</th>
                             </tr>
                             <tr>
-                                <td><?php the_field('point'); ?></td>
+                                <td><?php the_field('style'); ?></td>
                             </tr>
-                        <?php endif; ?>
                     </table><!-- /.cell -->
+                <?php endif;?>
+
+                <?php $value = get_post_meta($post->ID, 'blood', true);?>
+                <?php if(empty($value)):?>
+                <?php else:?>
                     <table class="cell">
-                        <?php if (get_field('blood')) : ?>
-                            <?php $field = get_field_object('blood'); ?>
                             <tr>
-                                <th><?php echo $field['label']; ?></th>
+                                <th>血液型</th>
                             </tr>
                             <tr>
                                 <td><?php the_field('blood'); ?></td>
                             </tr>
-                        <?php endif; ?>
                     </table><!-- /.cell -->
+                <?php endif;?>
+
+                <?php $value = get_post_meta($post->ID, 'from', true);?>
+                <?php if(empty($value)):?>
+                <?php else:?>
                     <table class="cell">
-                        <?php if (get_field('from')) : ?>
-                            <?php $field = get_field_object('from'); ?>
                             <tr>
-                                <th><?php echo $field['label']; ?></th>
+                                <th>出身地</th>
                             </tr>
                             <tr>
                                 <td><?php the_field('from'); ?></td>
                             </tr>
-                        <?php endif; ?>
                     </table><!-- /.cell -->
+                <?php endif;?>
+
+                <?php $value = get_post_meta($post->ID, 'food', true);?>
+                <?php if(empty($value)):?>
+                <?php else:?>
                     <table class="cell">
-                        <?php if (get_field('food')) : ?>
-                            <?php $field = get_field_object('food'); ?>
                             <tr>
-                                <th><?php echo $field['label']; ?></th>
+                                <th>好きな食べ物</th>
                             </tr>
                             <tr>
                                 <td><?php the_field('food'); ?></td>
                             </tr>
-                        <?php endif; ?>
                     </table><!-- /.cell -->
+                <?php endif;?>
+
+                <?php $value = get_post_meta($post->ID, 'mens', true);?>
+                <?php if(empty($value)):?>
+                <?php else:?>
                     <table class="cell">
-                        <?php if (get_field('mens')) : ?>
-                            <?php $field = get_field_object('mens'); ?>
                             <tr>
-                                <th><?php echo $field['label']; ?></th>
+                                <th>男性のここがフェチ！</th>
                             </tr>
                             <tr>
                                 <td><?php the_field('mens'); ?></td>
                             </tr>
-                        <?php endif; ?>
                     </table><!-- /.cell -->
+                <?php endif;?>
+
+                <?php $value = get_post_meta($post->ID, 'sports', true);?>
+                <?php if(empty($value)):?>
+                <?php else:?>
                     <table class="cell">
-                        <?php if (get_field('sports')) : ?>
-                            <?php $field = get_field_object('sports'); ?>
                             <tr>
-                                <th><?php echo $field['label']; ?></th>
+                                <th>好きなスポーツ</th>
                             </tr>
                             <tr>
                                 <td><?php the_field('sports'); ?></td>
                             </tr>
-                        <?php endif; ?>
                     </table><!-- /.cell -->
+                <?php endif;?>
+
+                <?php $value = get_post_meta($post->ID, 'movie', true);?>
+                <?php if(empty($value)):?>
+                <?php else:?>
                     <table class="cell">
-                        <?php if (get_field('movie')) : ?>
-                            <?php $field = get_field_object('movie'); ?>
                             <tr>
-                                <th><?php echo $field['label']; ?></th>
+                                <th>好きな映画</th>
                             </tr>
                             <tr>
                                 <td><?php the_field('movie'); ?></td>
                             </tr>
-                        <?php endif; ?>
                     </table><!-- /.cell -->
+                <?php endif;?>
+
+                <?php $value = get_post_meta($post->ID, 'birthday', true);?>
+                <?php if(empty($value)):?>
+                <?php else:?>
                     <table class="cell">
-                        <?php if (get_field('birthday')) : ?>
-                            <?php $field = get_field_object('birthday'); ?>
                             <tr>
-                                <th><?php echo $field['label']; ?></th>
+                                <th>誕生日</th>
                             </tr>
                             <tr>
                                 <td><?php the_field('birthday'); ?></td>
                             </tr>
-                        <?php endif; ?>
                     </table><!-- /.cell -->
+                <?php endif;?>
+
+                <?php $value = get_post_meta($post->ID, 'point', true);?>
+                <?php if(empty($value)):?>
+                <?php else:?>
                     <table class="cell">
-                        <?php if (get_field('color')) : ?>
-                            <?php $field = get_field_object('color'); ?>
                             <tr>
-                                <th><?php echo $field['label']; ?></th>
+                                <th>チャームポイント</th>
                             </tr>
                             <tr>
-                                <td><?php the_field('color'); ?></td>
+                                <td><?php the_field('point'); ?></td>
                             </tr>
-                        <?php endif; ?>
                     </table><!-- /.cell -->
+                <?php endif;?>
+
+                <?php $value = get_post_meta($post->ID, 'caractor', true);?>
+                <?php if(empty($value)):?>
+                <?php else:?>
                     <table class="cell">
-                        <?php if (get_field('trip')) : ?>
-                            <?php $field = get_field_object('trip'); ?>
                             <tr>
-                                <th><?php echo $field['label']; ?></th>
-                            </tr>
-                            <tr>
-                                <td><?php the_field('trip'); ?></td>
-                            </tr>
-                        <?php endif; ?>
-                    </table><!-- /.cell -->
-                    <table class="cell">
-                        <?php if (get_field('caractor')) : ?>
-                            <?php $field = get_field_object('caractor'); ?>
-                            <tr>
-                                <th><?php echo $field['label']; ?></th>
+                                <th>好きなキャラクター</th>
                             </tr>
                             <tr>
                                 <td><?php the_field('caractor'); ?></td>
                             </tr>
-                        <?php endif; ?>
                     </table><!-- /.cell -->
+                <?php endif;?>
+
+                <?php $value = get_post_meta($post->ID, 'color', true);?>
+                <?php if(empty($value)):?>
+                <?php else:?>
                     <table class="cell">
-                        <?php if (get_field('book')) : ?>
-                            <?php $field = get_field_object('book'); ?>
                             <tr>
-                                <th><?php echo $field['label']; ?></th>
+                                <th>好きな色</th>
+                            </tr>
+                            <tr>
+                                <td><?php the_field('color'); ?></td>
+                            </tr>
+                    </table><!-- /.cell -->
+                <?php endif;?>
+
+                <?php $value = get_post_meta($post->ID, 'trip', true);?>
+                <?php if(empty($value)):?>
+                <?php else:?>
+                    <table class="cell">
+                            <tr>
+                                <th>旅行に行ってみたい場所</th>
+                            </tr>
+                            <tr>
+                                <td><?php the_field('trip'); ?></td>
+                            </tr>
+                    </table><!-- /.cell -->
+                <?php endif;?>
+
+                <?php $value = get_post_meta($post->ID, 'book', true);?>
+                <?php if(empty($value)):?>
+                <?php else:?>
+                    <table class="cell">
+                            <tr>
+                                <th>好きな漫画や本</th>
                             </tr>
                             <tr>
                                 <td><?php the_field('book'); ?></td>
                             </tr>
-                        <?php endif; ?>
                     </table><!-- /.cell -->
+                <?php endif;?>
+
+                <?php $value = get_post_meta($post->ID, 'type', true);?>
+                <?php if(empty($value)):?>
+                <?php else:?>
                     <table class="cell">
-                        <?php if (get_field('movie')) : ?>
-                            <?php $field = get_field_object('movie'); ?>
                             <tr>
-                                <th><?php echo $field['label']; ?></th>
-                            </tr>
-                            <tr>
-                                <td><?php the_field('movie'); ?></td>
-                            </tr>
-                        <?php endif; ?>
-                    </table><!-- /.cell -->
-                    <table class="cell">
-                        <?php if (get_field('type')) : ?>
-                            <?php $field = get_field_object('type'); ?>
-                            <tr>
-                                <th><?php echo $field['label']; ?></th>
+                                <th>好きなタイプ</th>
                             </tr>
                             <tr>
                                 <td><?php the_field('type'); ?></td>
                             </tr>
-                        <?php endif; ?>
                     </table><!-- /.cell -->
+                <?php endif;?>
+
+                <?php $value = get_post_meta($post->ID, 'message', true);?>
+                <?php if(empty($value)):?>
+                <?php else:?>
                     <table class="cell">
-                        <?php if (get_field('message')) : ?>
-                            <?php $field = get_field_object('message'); ?>
                             <tr>
-                                <th><?php echo $field['label']; ?></th>
+                                <th>メッセージ</th>
                             </tr>
                             <tr>
                                 <td><?php the_field('message'); ?></td>
                             </tr>
-                        <?php endif; ?>
                     </table><!-- /.cell -->
+                <?php endif;?>
                 </div><!-- /.cast__table -->
                 <div class="SPACER--100 SP--NONE"></div><!-- /.SPACER--200 -->
                 <div class="cast__button btn-large"><a href="<?php echo esc_url(home_url('/contact')); ?>">オンラインガールズバーの予約へ</a></div><!-- /.cast__button btn-large -->
